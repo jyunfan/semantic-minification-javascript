@@ -1,0 +1,944 @@
+{
+  "description": "Round 6 cached candidate set. Each selected window has multiple cached responses; most are conservative copy controls because no live model API key is configured. Rank-1 windows also carry forward the Codex-generated Round 5 rewrites when available.",
+  "generationMode": "seeded-cache-from-round5-and-controls",
+  "model": "codex-session",
+  "generatedAt": "2026-04-30T18:30:40.193Z",
+  "windowsPath": "benchmarks/round6/windows.json",
+  "candidates": [
+    {
+      "windowId": "antd-window-1",
+      "sourceSha256": "f5fca5a0257e0f0438f04bc972fec068c6e372859366c9060390f9d1518455b8",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function getPositionCls(ele, idx) {\n    if (mode === 'alternate') {\n      if (ele.props.position === 'right') return \"\".concat(prefixCls, \"-item-right\");\n      if (ele.props.position === 'left') return \"\".concat(prefixCls, \"-item-left\");\n      return idx % 2 === 0 ? \"\".concat(prefixCls, \"-item-left\") : \"\".concat(prefixCls, \"-item-right\");\n    }\n\n    if (mode === 'left') return \"\".concat(prefixCls, \"-item-left\");\n    if (mode === 'right') return \"\".concat(prefixCls, \"-item-right\");\n    if (ele.props.position === 'right') return \"\".concat(prefixCls, \"-item-right\");\n    return '';\n  }"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function getPositionCls(ele, idx) {\n    if (mode === 'alternate') {\n      if (ele.props.position === 'right') return \"\".concat(prefixCls, \"-item-right\");\n      if (ele.props.position === 'left') return \"\".concat(prefixCls, \"-item-left\");\n      return idx % 2 === 0 ? \"\".concat(prefixCls, \"-item-left\") : \"\".concat(prefixCls, \"-item-right\");\n    }\n\n    if (mode === 'left') return \"\".concat(prefixCls, \"-item-left\");\n    if (mode === 'right') return \"\".concat(prefixCls, \"-item-right\");\n    if (ele.props.position === 'right') return \"\".concat(prefixCls, \"-item-right\");\n    return '';\n  }"
+        },
+        {
+          "name": "round5-position-ternary",
+          "code": "function getPositionCls(ele, idx) {\n  var pos = ele.props.position;\n  if (mode === 'alternate') return pos === 'right' ? prefixCls + \"-item-right\" : pos === 'left' || idx % 2 === 0 ? prefixCls + \"-item-left\" : prefixCls + \"-item-right\";\n  return mode === 'left' ? prefixCls + \"-item-left\" : mode === 'right' || pos === 'right' ? prefixCls + \"-item-right\" : '';\n}",
+          "kind": "cached-codex-rewrite"
+        }
+      ]
+    },
+    {
+      "windowId": "antd-window-2",
+      "sourceSha256": "b06f8b8438dda00569407b613ff969cc08d48b36e269aceae679da1cae9991ba",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === \"string\") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === \"Object\" && o.constructor) n = o.constructor.name; if (n === \"Map\" || n === \"Set\") return Array.from(o); if (n === \"Arguments\" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === \"string\") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === \"Object\" && o.constructor) n = o.constructor.name; if (n === \"Map\" || n === \"Set\") return Array.from(o); if (n === \"Arguments\" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }"
+        }
+      ]
+    },
+    {
+      "windowId": "antd-window-3",
+      "sourceSha256": "b06f8b8438dda00569407b613ff969cc08d48b36e269aceae679da1cae9991ba",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === \"string\") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === \"Object\" && o.constructor) n = o.constructor.name; if (n === \"Map\" || n === \"Set\") return Array.from(o); if (n === \"Arguments\" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === \"string\") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === \"Object\" && o.constructor) n = o.constructor.name; if (n === \"Map\" || n === \"Set\") return Array.from(o); if (n === \"Arguments\" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }"
+        }
+      ]
+    },
+    {
+      "windowId": "antd-window-4",
+      "sourceSha256": "b06f8b8438dda00569407b613ff969cc08d48b36e269aceae679da1cae9991ba",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === \"string\") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === \"Object\" && o.constructor) n = o.constructor.name; if (n === \"Map\" || n === \"Set\") return Array.from(o); if (n === \"Arguments\" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === \"string\") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === \"Object\" && o.constructor) n = o.constructor.name; if (n === \"Map\" || n === \"Set\") return Array.from(o); if (n === \"Arguments\" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }"
+        }
+      ]
+    },
+    {
+      "windowId": "antd-window-5",
+      "sourceSha256": "a2ea9ef29806b21bfbf1f8f6a2b9032e85b212821b6efd249200ca29c404a52c",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function _unsupportedIterableToArray(o, minLen) {\n  if (!o) return;\n  if (typeof o === \"string\") return Object(_arrayLikeToArray_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ \"a\"])(o, minLen);\n  var n = Object.prototype.toString.call(o).slice(8, -1);\n  if (n === \"Object\" && o.constructor) n = o.constructor.name;\n  if (n === \"Map\" || n === \"Set\") return Array.from(o);\n  if (n === \"Arguments\" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return Object(_arrayLikeToArray_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ \"a\"])(o, minLen);\n}"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function _unsupportedIterableToArray(o, minLen) {\n  if (!o) return;\n  if (typeof o === \"string\") return Object(_arrayLikeToArray_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ \"a\"])(o, minLen);\n  var n = Object.prototype.toString.call(o).slice(8, -1);\n  if (n === \"Object\" && o.constructor) n = o.constructor.name;\n  if (n === \"Map\" || n === \"Set\") return Array.from(o);\n  if (n === \"Arguments\" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return Object(_arrayLikeToArray_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ \"a\"])(o, minLen);\n}"
+        }
+      ]
+    },
+    {
+      "windowId": "d3-window-1",
+      "sourceSha256": "a3f22037dc5a1cf3f1b5ffe28705d4f5babfff8291849fb163c7d8180f1b7638",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function autoType(object) {\n  for (var key in object) {\n    var value = object[key].trim(), number, m;\n    if (!value) value = null;\n    else if (value === \"true\") value = true;\n    else if (value === \"false\") value = false;\n    else if (value === \"NaN\") value = NaN;\n    else if (!isNaN(number = +value)) value = number;\n    else if (m = value.match(/^([-+]\\d{2})?\\d{4}(-\\d{2}(-\\d{2})?)?(T\\d{2}:\\d{2}(:\\d{2}(\\.\\d{3})?)?(Z|[-+]\\d{2}:\\d{2})?)?$/)) {\n      if (fixtz && !!m[4] && !m[7]) value = value.replace(/-/g, \"/\").replace(/T/, \" \");\n      value = new Date(value);\n    }\n    else continue;\n    object[key] = value;\n  }\n  return object;\n}"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function autoType(object) {\n  for (var key in object) {\n    var value = object[key].trim(), number, m;\n    if (!value) value = null;\n    else if (value === \"true\") value = true;\n    else if (value === \"false\") value = false;\n    else if (value === \"NaN\") value = NaN;\n    else if (!isNaN(number = +value)) value = number;\n    else if (m = value.match(/^([-+]\\d{2})?\\d{4}(-\\d{2}(-\\d{2})?)?(T\\d{2}:\\d{2}(:\\d{2}(\\.\\d{3})?)?(Z|[-+]\\d{2}:\\d{2})?)?$/)) {\n      if (fixtz && !!m[4] && !m[7]) value = value.replace(/-/g, \"/\").replace(/T/, \" \");\n      value = new Date(value);\n    }\n    else continue;\n    object[key] = value;\n  }\n  return object;\n}"
+        },
+        {
+          "name": "round5-trim-assignment",
+          "code": "function autoType(object) {\n  for (var key in object) {\n    var value = object[key].trim(), number, m;\n    if (!value) value = null;\n    else if (value === \"true\") value = true;\n    else if (value === \"false\") value = false;\n    else if (value === \"NaN\") value = NaN;\n    else if (!isNaN(number = +value)) value = number;\n    else if (m = value.match(/^([-+]\\d{2})?\\d{4}(-\\d{2}(-\\d{2})?)?(T\\d{2}:\\d{2}(:\\d{2}(\\.\\d{3})?)?(Z|[-+]\\d{2}:\\d{2})?)?$/)) {\n      if (fixtz && !!m[4] && !m[7]) value = value.replace(/-/g, \"/\").replace(/T/, \" \");\n      value = new Date(value);\n    } else continue;\n    object[key] = value;\n  }\n  return object;\n}",
+          "kind": "cached-codex-rewrite"
+        }
+      ]
+    },
+    {
+      "windowId": "d3-window-2",
+      "sourceSha256": "06b9316ed8589a50ec113fc2fd294dadec1db30398d6f660610852875ef0f9ff",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "_project(x0, y0, vx, vy) {\n    let t = Infinity, c, x, y;\n    if (vy < 0) { // top\n      if (y0 <= this.ymin) return null;\n      if ((c = (this.ymin - y0) / vy) < t) y = this.ymin, x = x0 + (t = c) * vx;\n    } else if (vy > 0) { // bottom\n      if (y0 >= this.ymax) return null;\n      if ((c = (this.ymax - y0) / vy) < t) y = this.ymax, x = x0 + (t = c) * vx;\n    }\n    if (vx > 0) { // right\n      if (x0 >= this.xmax) return null;\n      if ((c = (this.xmax - x0) / vx) < t) x = this.xmax, y = y0 + (t = c) * vy;\n    } else if (vx < 0) { // left\n      if (x0 <= this.xmin) return null;\n      if ((c = (this.xmin - x0) / vx) < t) x = this.xmin, y = y0 + (t = c) * vy;\n    }\n    return [x, y];\n  }"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "_project(x0, y0, vx, vy) {\n    let t = Infinity, c, x, y;\n    if (vy < 0) { // top\n      if (y0 <= this.ymin) return null;\n      if ((c = (this.ymin - y0) / vy) < t) y = this.ymin, x = x0 + (t = c) * vx;\n    } else if (vy > 0) { // bottom\n      if (y0 >= this.ymax) return null;\n      if ((c = (this.ymax - y0) / vy) < t) y = this.ymax, x = x0 + (t = c) * vx;\n    }\n    if (vx > 0) { // right\n      if (x0 >= this.xmax) return null;\n      if ((c = (this.xmax - x0) / vx) < t) x = this.xmax, y = y0 + (t = c) * vy;\n    } else if (vx < 0) { // left\n      if (x0 <= this.xmin) return null;\n      if ((c = (this.xmin - x0) / vx) < t) x = this.xmin, y = y0 + (t = c) * vy;\n    }\n    return [x, y];\n  }"
+        }
+      ]
+    },
+    {
+      "windowId": "d3-window-3",
+      "sourceSha256": "fbe85173b78216b63f5605d6652c6bf5a01c83c6038ea5731736159c8e7aa61c",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function hslConvert(o) {\n  if (o instanceof Hsl) return new Hsl(o.h, o.s, o.l, o.opacity);\n  if (!(o instanceof Color)) o = color(o);\n  if (!o) return new Hsl;\n  if (o instanceof Hsl) return o;\n  o = o.rgb();\n  var r = o.r / 255,\n      g = o.g / 255,\n      b = o.b / 255,\n      min = Math.min(r, g, b),\n      max = Math.max(r, g, b),\n      h = NaN,\n      s = max - min,\n      l = (max + min) / 2;\n  if (s) {\n    if (r === max) h = (g - b) / s + (g < b) * 6;\n    else if (g === max) h = (b - r) / s + 2;\n    else h = (r - g) / s + 4;\n    s /= l < 0.5 ? max + min : 2 - max - min;\n    h *= 60;\n  } else {\n    s = l > 0 && l < 1 ? 0 : h;\n  }\n  return new Hsl(h, s, l, o.opacity);\n}"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function hslConvert(o) {\n  if (o instanceof Hsl) return new Hsl(o.h, o.s, o.l, o.opacity);\n  if (!(o instanceof Color)) o = color(o);\n  if (!o) return new Hsl;\n  if (o instanceof Hsl) return o;\n  o = o.rgb();\n  var r = o.r / 255,\n      g = o.g / 255,\n      b = o.b / 255,\n      min = Math.min(r, g, b),\n      max = Math.max(r, g, b),\n      h = NaN,\n      s = max - min,\n      l = (max + min) / 2;\n  if (s) {\n    if (r === max) h = (g - b) / s + (g < b) * 6;\n    else if (g === max) h = (b - r) / s + 2;\n    else h = (r - g) / s + 4;\n    s /= l < 0.5 ? max + min : 2 - max - min;\n    h *= 60;\n  } else {\n    s = l > 0 && l < 1 ? 0 : h;\n  }\n  return new Hsl(h, s, l, o.opacity);\n}"
+        }
+      ]
+    },
+    {
+      "windowId": "d3-window-4",
+      "sourceSha256": "f78f455a8fefbc81ba689b36301f9ecbdbb1913fbfd58bfb43c5ecaeebbaea4b",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function sleep(time) {\n  if (frame) return; // Soonest alarm already set, or will be.\n  if (timeout) timeout = clearTimeout(timeout);\n  var delay = time - clockNow; // Strictly less than if we recomputed clockNow.\n  if (delay > 24) {\n    if (time < Infinity) timeout = setTimeout(wake, time - clock.now() - clockSkew);\n    if (interval) interval = clearInterval(interval);\n  } else {\n    if (!interval) clockLast = clock.now(), interval = setInterval(poke, pokeDelay);\n    frame = 1, setFrame(wake);\n  }\n}"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function sleep(time) {\n  if (frame) return; // Soonest alarm already set, or will be.\n  if (timeout) timeout = clearTimeout(timeout);\n  var delay = time - clockNow; // Strictly less than if we recomputed clockNow.\n  if (delay > 24) {\n    if (time < Infinity) timeout = setTimeout(wake, time - clock.now() - clockSkew);\n    if (interval) interval = clearInterval(interval);\n  } else {\n    if (!interval) clockLast = clock.now(), interval = setInterval(poke, pokeDelay);\n    frame = 1, setFrame(wake);\n  }\n}"
+        }
+      ]
+    },
+    {
+      "windowId": "d3-window-5",
+      "sourceSha256": "bbf77e11fbf1d1d77b2b7e25a3c1b3a44146d6779788e5e884bef63a41c56a0c",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function(count, specifier) {\n    if (specifier == null) specifier = base === 10 ? \".0e\" : \",\";\n    if (typeof specifier !== \"function\") specifier = exports.format(specifier);\n    if (count === Infinity) return specifier;\n    if (count == null) count = 10;\n    var k = Math.max(1, base * count / scale.ticks().length); // TODO fast estimate?\n    return function(d) {\n      var i = d / pows(Math.round(logs(d)));\n      if (i * base < base - 0.5) i *= base;\n      return i <= k ? specifier(d) : \"\";\n    };\n  }"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function(count, specifier) {\n    if (specifier == null) specifier = base === 10 ? \".0e\" : \",\";\n    if (typeof specifier !== \"function\") specifier = exports.format(specifier);\n    if (count === Infinity) return specifier;\n    if (count == null) count = 10;\n    var k = Math.max(1, base * count / scale.ticks().length); // TODO fast estimate?\n    return function(d) {\n      var i = d / pows(Math.round(logs(d)));\n      if (i * base < base - 0.5) i *= base;\n      return i <= k ? specifier(d) : \"\";\n    };\n  }"
+        }
+      ]
+    },
+    {
+      "windowId": "echarts-window-1",
+      "sourceSha256": "4e51887265dd89ea3dce67aeb3b6204b1f8d03f01227ee44eae621615bcad8ec",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function cssHueToRgb(m1, m2, h) {\n        if (h < 0) {\n            h += 1;\n        }\n        else if (h > 1) {\n            h -= 1;\n        }\n        if (h * 6 < 1) {\n            return m1 + (m2 - m1) * h * 6;\n        }\n        if (h * 2 < 1) {\n            return m2;\n        }\n        if (h * 3 < 2) {\n            return m1 + (m2 - m1) * (2 / 3 - h) * 6;\n        }\n        return m1;\n    }"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function cssHueToRgb(m1, m2, h) {\n        if (h < 0) {\n            h += 1;\n        }\n        else if (h > 1) {\n            h -= 1;\n        }\n        if (h * 6 < 1) {\n            return m1 + (m2 - m1) * h * 6;\n        }\n        if (h * 2 < 1) {\n            return m2;\n        }\n        if (h * 3 < 2) {\n            return m1 + (m2 - m1) * (2 / 3 - h) * 6;\n        }\n        return m1;\n    }"
+        },
+        {
+          "name": "round5-hue-ternary",
+          "code": "function cssHueToRgb(m1, m2, h) {\n  h < 0 ? h += 1 : h > 1 && (h -= 1);\n  return h * 6 < 1 ? m1 + (m2 - m1) * h * 6 : h * 2 < 1 ? m2 : h * 3 < 2 ? m1 + (m2 - m1) * (2 / 3 - h) * 6 : m1;\n}",
+          "kind": "cached-codex-rewrite"
+        }
+      ]
+    },
+    {
+      "windowId": "echarts-window-2",
+      "sourceSha256": "314cd02af988a05685e4a02e3ef4a496744b2f248ee67c19a761e5caf6dda6d1",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function windingLine(x0, y0, x1, y1, x, y) {\n        if ((y > y0 && y > y1) || (y < y0 && y < y1)) {\n            return 0;\n        }\n        if (y1 === y0) {\n            return 0;\n        }\n        var t = (y - y0) / (y1 - y0);\n        var dir = y1 < y0 ? 1 : -1;\n        if (t === 1 || t === 0) {\n            dir = y1 < y0 ? 0.5 : -0.5;\n        }\n        var x_ = t * (x1 - x0) + x0;\n        return x_ === x ? Infinity : x_ > x ? dir : 0;\n    }"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function windingLine(x0, y0, x1, y1, x, y) {\n        if ((y > y0 && y > y1) || (y < y0 && y < y1)) {\n            return 0;\n        }\n        if (y1 === y0) {\n            return 0;\n        }\n        var t = (y - y0) / (y1 - y0);\n        var dir = y1 < y0 ? 1 : -1;\n        if (t === 1 || t === 0) {\n            dir = y1 < y0 ? 0.5 : -0.5;\n        }\n        var x_ = t * (x1 - x0) + x0;\n        return x_ === x ? Infinity : x_ > x ? dir : 0;\n    }"
+        }
+      ]
+    },
+    {
+      "windowId": "echarts-window-3",
+      "sourceSha256": "3dd2f73362fb8862b9e9f7b9768d0847cae91ebe62255cfa191e287cfb23781f",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function filter(arr, cb, context) {\n        if (!arr) {\n            return [];\n        }\n        if (!cb) {\n            return slice(arr);\n        }\n        if (arr.filter && arr.filter === nativeFilter) {\n            return arr.filter(cb, context);\n        }\n        else {\n            var result = [];\n            for (var i = 0, len = arr.length; i < len; i++) {\n                if (cb.call(context, arr[i], i, arr)) {\n                    result.push(arr[i]);\n                }\n            }\n            return result;\n        }\n    }"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function filter(arr, cb, context) {\n        if (!arr) {\n            return [];\n        }\n        if (!cb) {\n            return slice(arr);\n        }\n        if (arr.filter && arr.filter === nativeFilter) {\n            return arr.filter(cb, context);\n        }\n        else {\n            var result = [];\n            for (var i = 0, len = arr.length; i < len; i++) {\n                if (cb.call(context, arr[i], i, arr)) {\n                    result.push(arr[i]);\n                }\n            }\n            return result;\n        }\n    }"
+        }
+      ]
+    },
+    {
+      "windowId": "echarts-window-4",
+      "sourceSha256": "4cd99e39d200c82a986bebc6bd05532ceb9c4688cd381e36f9890aeb538cd317",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function queryDataIndex(data, payload) {\n      if (payload.dataIndexInside != null) {\n        return payload.dataIndexInside;\n      } else if (payload.dataIndex != null) {\n        return isArray(payload.dataIndex) ? map(payload.dataIndex, function (value) {\n          return data.indexOfRawIndex(value);\n        }) : data.indexOfRawIndex(payload.dataIndex);\n      } else if (payload.name != null) {\n        return isArray(payload.name) ? map(payload.name, function (value) {\n          return data.indexOfName(value);\n        }) : data.indexOfName(payload.name);\n      }\n    }"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function queryDataIndex(data, payload) {\n      if (payload.dataIndexInside != null) {\n        return payload.dataIndexInside;\n      } else if (payload.dataIndex != null) {\n        return isArray(payload.dataIndex) ? map(payload.dataIndex, function (value) {\n          return data.indexOfRawIndex(value);\n        }) : data.indexOfRawIndex(payload.dataIndex);\n      } else if (payload.name != null) {\n        return isArray(payload.name) ? map(payload.name, function (value) {\n          return data.indexOfName(value);\n        }) : data.indexOfName(payload.name);\n      }\n    }"
+        }
+      ]
+    },
+    {
+      "windowId": "echarts-window-5",
+      "sourceSha256": "43005429fa2b4a5bc9be86d0e424327194432433ad4fe290886bc8f2f4dd74d9",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function () {\n            var pathFill = this.style.fill;\n            if (pathFill !== 'none') {\n                if (isString(pathFill)) {\n                    var fillLum = lum(pathFill, 0);\n                    if (fillLum > 0.5) {\n                        return DARK_LABEL_COLOR;\n                    }\n                    else if (fillLum > 0.2) {\n                        return LIGHTER_LABEL_COLOR;\n                    }\n                    return LIGHT_LABEL_COLOR;\n                }\n                else if (pathFill) {\n                    return LIGHT_LABEL_COLOR;\n                }\n            }\n            return DARK_LABEL_COLOR;\n        }"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function () {\n            var pathFill = this.style.fill;\n            if (pathFill !== 'none') {\n                if (isString(pathFill)) {\n                    var fillLum = lum(pathFill, 0);\n                    if (fillLum > 0.5) {\n                        return DARK_LABEL_COLOR;\n                    }\n                    else if (fillLum > 0.2) {\n                        return LIGHTER_LABEL_COLOR;\n                    }\n                    return LIGHT_LABEL_COLOR;\n                }\n                else if (pathFill) {\n                    return LIGHT_LABEL_COLOR;\n                }\n            }\n            return DARK_LABEL_COLOR;\n        }"
+        }
+      ]
+    },
+    {
+      "windowId": "jquery-window-1",
+      "sourceSha256": "3ec56557226a4f8b7d4a1d8585ba7f4c7711d7980ac82c9a6a66dc71103c3c9a",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function getData( data ) {\n\tif ( data === \"true\" ) {\n\t\treturn true;\n\t}\n\n\tif ( data === \"false\" ) {\n\t\treturn false;\n\t}\n\n\tif ( data === \"null\" ) {\n\t\treturn null;\n\t}\n\n\t// Only convert to a number if it doesn't change the string\n\tif ( data === +data + \"\" ) {\n\t\treturn +data;\n\t}\n\n\tif ( rbrace.test( data ) ) {\n\t\treturn JSON.parse( data );\n\t}\n\n\treturn data;\n}"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function getData( data ) {\n\tif ( data === \"true\" ) {\n\t\treturn true;\n\t}\n\n\tif ( data === \"false\" ) {\n\t\treturn false;\n\t}\n\n\tif ( data === \"null\" ) {\n\t\treturn null;\n\t}\n\n\t// Only convert to a number if it doesn't change the string\n\tif ( data === +data + \"\" ) {\n\t\treturn +data;\n\t}\n\n\tif ( rbrace.test( data ) ) {\n\t\treturn JSON.parse( data );\n\t}\n\n\treturn data;\n}"
+        },
+        {
+          "name": "round5-data-ternary",
+          "code": "function getData(data) {\n  return data === \"true\" ? true : data === \"false\" ? false : data === \"null\" ? null : data === +data + \"\" ? +data : rbrace.test(data) ? JSON.parse(data) : data;\n}",
+          "kind": "cached-codex-rewrite"
+        }
+      ]
+    },
+    {
+      "windowId": "jquery-window-2",
+      "sourceSha256": "e26318aa249a15efaf64709c7a155b32408262bb768bff349059c5ecf41334b0",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function( event ) {\n\t\tvar button = event.button;\n\n\t\t// Add which for key events\n\t\tif ( event.which == null && rkeyEvent.test( event.type ) ) {\n\t\t\treturn event.charCode != null ? event.charCode : event.keyCode;\n\t\t}\n\n\t\t// Add which for click: 1 === left; 2 === middle; 3 === right\n\t\tif ( !event.which && button !== undefined && rmouseEvent.test( event.type ) ) {\n\t\t\tif ( button & 1 ) {\n\t\t\t\treturn 1;\n\t\t\t}\n\n\t\t\tif ( button & 2 ) {\n\t\t\t\treturn 3;\n\t\t\t}\n\n\t\t\tif ( button & 4 ) {\n\t\t\t\treturn 2;\n\t\t\t}\n\n\t\t\treturn 0;\n\t\t}\n\n\t\treturn event.which;\n\t}"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function( event ) {\n\t\tvar button = event.button;\n\n\t\t// Add which for key events\n\t\tif ( event.which == null && rkeyEvent.test( event.type ) ) {\n\t\t\treturn event.charCode != null ? event.charCode : event.keyCode;\n\t\t}\n\n\t\t// Add which for click: 1 === left; 2 === middle; 3 === right\n\t\tif ( !event.which && button !== undefined && rmouseEvent.test( event.type ) ) {\n\t\t\tif ( button & 1 ) {\n\t\t\t\treturn 1;\n\t\t\t}\n\n\t\t\tif ( button & 2 ) {\n\t\t\t\treturn 3;\n\t\t\t}\n\n\t\t\tif ( button & 4 ) {\n\t\t\t\treturn 2;\n\t\t\t}\n\n\t\t\treturn 0;\n\t\t}\n\n\t\treturn event.which;\n\t}"
+        }
+      ]
+    },
+    {
+      "windowId": "jquery-window-3",
+      "sourceSha256": "ae211218ca9d0bec1ed778dd5e2ab98f7db8f509ef72678c44acf27c42f5d540",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function( elem, name, value ) {\n\t\tvar ret, hooks,\n\t\t\tnType = elem.nodeType;\n\n\t\t// Don't get/set properties on text, comment and attribute nodes\n\t\tif ( nType === 3 || nType === 8 || nType === 2 ) {\n\t\t\treturn;\n\t\t}\n\n\t\tif ( nType !== 1 || !jQuery.isXMLDoc( elem ) ) {\n\n\t\t\t// Fix name and attach hooks\n\t\t\tname = jQuery.propFix[ name ] || name;\n\t\t\thooks = jQuery.propHooks[ name ];\n\t\t}\n\n\t\tif ( value !== undefined ) {\n\t\t\tif ( hooks && \"set\" in hooks &&\n\t\t\t\t( ret = hooks.set( elem, value, name ) ) !== undefined ) {\n\t\t\t\treturn ret;\n\t\t\t}\n\n\t\t\treturn ( elem[ name ] = value );\n\t\t}\n\n\t\tif ( hooks && \"get\" in hooks && ( ret = hooks.get( elem, name ) ) !== null ) {\n\t\t\treturn ret;\n\t\t}\n\n\t\treturn elem[ name ];\n\t}"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function( elem, name, value ) {\n\t\tvar ret, hooks,\n\t\t\tnType = elem.nodeType;\n\n\t\t// Don't get/set properties on text, comment and attribute nodes\n\t\tif ( nType === 3 || nType === 8 || nType === 2 ) {\n\t\t\treturn;\n\t\t}\n\n\t\tif ( nType !== 1 || !jQuery.isXMLDoc( elem ) ) {\n\n\t\t\t// Fix name and attach hooks\n\t\t\tname = jQuery.propFix[ name ] || name;\n\t\t\thooks = jQuery.propHooks[ name ];\n\t\t}\n\n\t\tif ( value !== undefined ) {\n\t\t\tif ( hooks && \"set\" in hooks &&\n\t\t\t\t( ret = hooks.set( elem, value, name ) ) !== undefined ) {\n\t\t\t\treturn ret;\n\t\t\t}\n\n\t\t\treturn ( elem[ name ] = value );\n\t\t}\n\n\t\tif ( hooks && \"get\" in hooks && ( ret = hooks.get( elem, name ) ) !== null ) {\n\t\t\treturn ret;\n\t\t}\n\n\t\treturn elem[ name ];\n\t}"
+        }
+      ]
+    },
+    {
+      "windowId": "jquery-window-4",
+      "sourceSha256": "ab2f113dd6357bf607f5ba16288e00662af8b43bf40a92225e68da2a89a96bb5",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function siblingCheck( a, b ) {\n\tvar cur = b && a,\n\t\tdiff = cur && a.nodeType === 1 && b.nodeType === 1 &&\n\t\t\ta.sourceIndex - b.sourceIndex;\n\n\t// Use IE sourceIndex if available on both nodes\n\tif ( diff ) {\n\t\treturn diff;\n\t}\n\n\t// Check if b follows a\n\tif ( cur ) {\n\t\twhile ( ( cur = cur.nextSibling ) ) {\n\t\t\tif ( cur === b ) {\n\t\t\t\treturn -1;\n\t\t\t}\n\t\t}\n\t}\n\n\treturn a ? 1 : -1;\n}"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function siblingCheck( a, b ) {\n\tvar cur = b && a,\n\t\tdiff = cur && a.nodeType === 1 && b.nodeType === 1 &&\n\t\t\ta.sourceIndex - b.sourceIndex;\n\n\t// Use IE sourceIndex if available on both nodes\n\tif ( diff ) {\n\t\treturn diff;\n\t}\n\n\t// Check if b follows a\n\tif ( cur ) {\n\t\twhile ( ( cur = cur.nextSibling ) ) {\n\t\t\tif ( cur === b ) {\n\t\t\t\treturn -1;\n\t\t\t}\n\t\t}\n\t}\n\n\treturn a ? 1 : -1;\n}"
+        }
+      ]
+    },
+    {
+      "windowId": "jquery-window-5",
+      "sourceSha256": "b55714dd82e0085073b6c0bca463c4cb37f76db827e711cc0399c7b41f779f12",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function( elem, method, val ) {\n\n\t\t\t// Coalesce documents and windows\n\t\t\tvar win;\n\t\t\tif ( isWindow( elem ) ) {\n\t\t\t\twin = elem;\n\t\t\t} else if ( elem.nodeType === 9 ) {\n\t\t\t\twin = elem.defaultView;\n\t\t\t}\n\n\t\t\tif ( val === undefined ) {\n\t\t\t\treturn win ? win[ prop ] : elem[ method ];\n\t\t\t}\n\n\t\t\tif ( win ) {\n\t\t\t\twin.scrollTo(\n\t\t\t\t\t!top ? val : win.pageXOffset,\n\t\t\t\t\ttop ? val : win.pageYOffset\n\t\t\t\t);\n\n\t\t\t} else {\n\t\t\t\telem[ method ] = val;\n\t\t\t}\n\t\t}"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function( elem, method, val ) {\n\n\t\t\t// Coalesce documents and windows\n\t\t\tvar win;\n\t\t\tif ( isWindow( elem ) ) {\n\t\t\t\twin = elem;\n\t\t\t} else if ( elem.nodeType === 9 ) {\n\t\t\t\twin = elem.defaultView;\n\t\t\t}\n\n\t\t\tif ( val === undefined ) {\n\t\t\t\treturn win ? win[ prop ] : elem[ method ];\n\t\t\t}\n\n\t\t\tif ( win ) {\n\t\t\t\twin.scrollTo(\n\t\t\t\t\t!top ? val : win.pageXOffset,\n\t\t\t\t\ttop ? val : win.pageYOffset\n\t\t\t\t);\n\n\t\t\t} else {\n\t\t\t\telem[ method ] = val;\n\t\t\t}\n\t\t}"
+        }
+      ]
+    },
+    {
+      "windowId": "lodash-window-1",
+      "sourceSha256": "b5d3a5ebe267b40e012b26919ef09b059f3dfa8569a6ea70848752dba761745b",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function isEmpty(value) {\n      if (value == null) {\n        return true;\n      }\n      if (isArrayLike(value) &&\n          (isArray(value) || typeof value == 'string' || typeof value.splice == 'function' ||\n            isBuffer(value) || isTypedArray(value) || isArguments(value))) {\n        return !value.length;\n      }\n      var tag = getTag(value);\n      if (tag == mapTag || tag == setTag) {\n        return !value.size;\n      }\n      if (isPrototype(value)) {\n        return !baseKeys(value).length;\n      }\n      for (var key in value) {\n        if (hasOwnProperty.call(value, key)) {\n          return false;\n        }\n      }\n      return true;\n    }"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function isEmpty(value) {\n      if (value == null) {\n        return true;\n      }\n      if (isArrayLike(value) &&\n          (isArray(value) || typeof value == 'string' || typeof value.splice == 'function' ||\n            isBuffer(value) || isTypedArray(value) || isArguments(value))) {\n        return !value.length;\n      }\n      var tag = getTag(value);\n      if (tag == mapTag || tag == setTag) {\n        return !value.size;\n      }\n      if (isPrototype(value)) {\n        return !baseKeys(value).length;\n      }\n      for (var key in value) {\n        if (hasOwnProperty.call(value, key)) {\n          return false;\n        }\n      }\n      return true;\n    }"
+        },
+        {
+          "name": "round5-early-return-flat",
+          "code": "function isEmpty(value) {\n  if (value == null) return true;\n  if (isArrayLike(value) && (isArray(value) || typeof value == 'string' || typeof value.splice == 'function' || isBuffer(value) || isTypedArray(value) || isArguments(value))) return !value.length;\n  var tag = getTag(value);\n  if (tag == mapTag || tag == setTag) return !value.size;\n  if (isPrototype(value)) return !baseKeys(value).length;\n  for (var key in value) if (hasOwnProperty.call(value, key)) return false;\n  return true;\n}",
+          "kind": "cached-codex-rewrite"
+        }
+      ]
+    },
+    {
+      "windowId": "lodash-window-2",
+      "sourceSha256": "07f563c3d858e723cf85cac4376561b196dd883d26d5492b1267fea9a04b16a1",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function toNumber(value) {\n      if (typeof value == 'number') {\n        return value;\n      }\n      if (isSymbol(value)) {\n        return NAN;\n      }\n      if (isObject(value)) {\n        var other = typeof value.valueOf == 'function' ? value.valueOf() : value;\n        value = isObject(other) ? (other + '') : other;\n      }\n      if (typeof value != 'string') {\n        return value === 0 ? value : +value;\n      }\n      value = baseTrim(value);\n      var isBinary = reIsBinary.test(value);\n      return (isBinary || reIsOctal.test(value))\n        ? freeParseInt(value.slice(2), isBinary ? 2 : 8)\n        : (reIsBadHex.test(value) ? NAN : +value);\n    }"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function toNumber(value) {\n      if (typeof value == 'number') {\n        return value;\n      }\n      if (isSymbol(value)) {\n        return NAN;\n      }\n      if (isObject(value)) {\n        var other = typeof value.valueOf == 'function' ? value.valueOf() : value;\n        value = isObject(other) ? (other + '') : other;\n      }\n      if (typeof value != 'string') {\n        return value === 0 ? value : +value;\n      }\n      value = baseTrim(value);\n      var isBinary = reIsBinary.test(value);\n      return (isBinary || reIsOctal.test(value))\n        ? freeParseInt(value.slice(2), isBinary ? 2 : 8)\n        : (reIsBadHex.test(value) ? NAN : +value);\n    }"
+        }
+      ]
+    },
+    {
+      "windowId": "lodash-window-3",
+      "sourceSha256": "d2bb391c1d2e3a12f976178385a64ae609937a016a2ac0eed8cdb79a730bd74e",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function toArray(value) {\n      if (!value) {\n        return [];\n      }\n      if (isArrayLike(value)) {\n        return isString(value) ? stringToArray(value) : copyArray(value);\n      }\n      if (symIterator && value[symIterator]) {\n        return iteratorToArray(value[symIterator]());\n      }\n      var tag = getTag(value),\n          func = tag == mapTag ? mapToArray : (tag == setTag ? setToArray : values);\n\n      return func(value);\n    }"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function toArray(value) {\n      if (!value) {\n        return [];\n      }\n      if (isArrayLike(value)) {\n        return isString(value) ? stringToArray(value) : copyArray(value);\n      }\n      if (symIterator && value[symIterator]) {\n        return iteratorToArray(value[symIterator]());\n      }\n      var tag = getTag(value),\n          func = tag == mapTag ? mapToArray : (tag == setTag ? setToArray : values);\n\n      return func(value);\n    }"
+        }
+      ]
+    },
+    {
+      "windowId": "lodash-window-4",
+      "sourceSha256": "845636ed67c64509e4698ff3aa1af7066824c8f232b8c90f301a206693f17c4a",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function(value, other) {\n        var result;\n        if (value === undefined && other === undefined) {\n          return defaultValue;\n        }\n        if (value !== undefined) {\n          result = value;\n        }\n        if (other !== undefined) {\n          if (result === undefined) {\n            return other;\n          }\n          if (typeof value == 'string' || typeof other == 'string') {\n            value = baseToString(value);\n            other = baseToString(other);\n          } else {\n            value = baseToNumber(value);\n            other = baseToNumber(other);\n          }\n          result = operator(value, other);\n        }\n        return result;\n      }"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function(value, other) {\n        var result;\n        if (value === undefined && other === undefined) {\n          return defaultValue;\n        }\n        if (value !== undefined) {\n          result = value;\n        }\n        if (other !== undefined) {\n          if (result === undefined) {\n            return other;\n          }\n          if (typeof value == 'string' || typeof other == 'string') {\n            value = baseToString(value);\n            other = baseToString(other);\n          } else {\n            value = baseToNumber(value);\n            other = baseToNumber(other);\n          }\n          result = operator(value, other);\n        }\n        return result;\n      }"
+        }
+      ]
+    },
+    {
+      "windowId": "lodash-window-5",
+      "sourceSha256": "e27e3a687dbd3899de8a1bbfeb4961a9964a3e961b9d70f7396d25b80eafa2cb",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function split(string, separator, limit) {\n      if (limit && typeof limit != 'number' && isIterateeCall(string, separator, limit)) {\n        separator = limit = undefined;\n      }\n      limit = limit === undefined ? MAX_ARRAY_LENGTH : limit >>> 0;\n      if (!limit) {\n        return [];\n      }\n      string = toString(string);\n      if (string && (\n            typeof separator == 'string' ||\n            (separator != null && !isRegExp(separator))\n          )) {\n        separator = baseToString(separator);\n        if (!separator && hasUnicode(string)) {\n          return castSlice(stringToArray(string), 0, limit);\n        }\n      }\n      return string.split(separator, limit);\n    }"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function split(string, separator, limit) {\n      if (limit && typeof limit != 'number' && isIterateeCall(string, separator, limit)) {\n        separator = limit = undefined;\n      }\n      limit = limit === undefined ? MAX_ARRAY_LENGTH : limit >>> 0;\n      if (!limit) {\n        return [];\n      }\n      string = toString(string);\n      if (string && (\n            typeof separator == 'string' ||\n            (separator != null && !isRegExp(separator))\n          )) {\n        separator = baseToString(separator);\n        if (!separator && hasUnicode(string)) {\n          return castSlice(stringToArray(string), 0, limit);\n        }\n      }\n      return string.split(separator, limit);\n    }"
+        }
+      ]
+    },
+    {
+      "windowId": "moment-window-1",
+      "sourceSha256": "b01508b32d2d2ad02a714ba590a5a9a6cf30112321a79e7351065acc75f3ab15",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function getLocale(key) {\n        var locale;\n\n        if (key && key._locale && key._locale._abbr) {\n            key = key._locale._abbr;\n        }\n\n        if (!key) {\n            return globalLocale;\n        }\n\n        if (!isArray(key)) {\n            //short-circuit everything else\n            locale = loadLocale(key);\n            if (locale) {\n                return locale;\n            }\n            key = [key];\n        }\n\n        return chooseLocale(key);\n    }"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function getLocale(key) {\n        var locale;\n\n        if (key && key._locale && key._locale._abbr) {\n            key = key._locale._abbr;\n        }\n\n        if (!key) {\n            return globalLocale;\n        }\n\n        if (!isArray(key)) {\n            //short-circuit everything else\n            locale = loadLocale(key);\n            if (locale) {\n                return locale;\n            }\n            key = [key];\n        }\n\n        return chooseLocale(key);\n    }"
+        },
+        {
+          "name": "round5-array-fast-path",
+          "code": "function getLocale(key) {\n  var locale;\n  if (key && key._locale && key._locale._abbr) key = key._locale._abbr;\n  if (!key) return globalLocale;\n  if (isArray(key)) return chooseLocale(key);\n  return (locale = loadLocale(key)) ? locale : chooseLocale([key]);\n}",
+          "kind": "cached-codex-rewrite"
+        }
+      ]
+    },
+    {
+      "windowId": "moment-window-2",
+      "sourceSha256": "ced7b462b5842648b01e73c5b67e2a4c4a3f78551d8b8f96b38bceadf2e4d626",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function meridiemFixWrap(locale, hour, meridiem) {\n        var isPm;\n\n        if (meridiem == null) {\n            // nothing to do\n            return hour;\n        }\n        if (locale.meridiemHour != null) {\n            return locale.meridiemHour(hour, meridiem);\n        } else if (locale.isPM != null) {\n            // Fallback\n            isPm = locale.isPM(meridiem);\n            if (isPm && hour < 12) {\n                hour += 12;\n            }\n            if (!isPm && hour === 12) {\n                hour = 0;\n            }\n            return hour;\n        } else {\n            // this is not supposed to happen\n            return hour;\n        }\n    }"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function meridiemFixWrap(locale, hour, meridiem) {\n        var isPm;\n\n        if (meridiem == null) {\n            // nothing to do\n            return hour;\n        }\n        if (locale.meridiemHour != null) {\n            return locale.meridiemHour(hour, meridiem);\n        } else if (locale.isPM != null) {\n            // Fallback\n            isPm = locale.isPM(meridiem);\n            if (isPm && hour < 12) {\n                hour += 12;\n            }\n            if (!isPm && hour === 12) {\n                hour = 0;\n            }\n            return hour;\n        } else {\n            // this is not supposed to happen\n            return hour;\n        }\n    }"
+        }
+      ]
+    },
+    {
+      "windowId": "moment-window-3",
+      "sourceSha256": "cb2401619ba54629b6ace80065702be71230e571ed2d3b01bca5e05cb78c5137",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function setMonth(mom, value) {\n        var dayOfMonth;\n\n        if (!mom.isValid()) {\n            // No op\n            return mom;\n        }\n\n        if (typeof value === 'string') {\n            if (/^\\d+$/.test(value)) {\n                value = toInt(value);\n            } else {\n                value = mom.localeData().monthsParse(value);\n                // TODO: Another silent failure?\n                if (!isNumber(value)) {\n                    return mom;\n                }\n            }\n        }\n\n        dayOfMonth = Math.min(mom.date(), daysInMonth(mom.year(), value));\n        mom._d['set' + (mom._isUTC ? 'UTC' : '') + 'Month'](value, dayOfMonth);\n        return mom;\n    }"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function setMonth(mom, value) {\n        var dayOfMonth;\n\n        if (!mom.isValid()) {\n            // No op\n            return mom;\n        }\n\n        if (typeof value === 'string') {\n            if (/^\\d+$/.test(value)) {\n                value = toInt(value);\n            } else {\n                value = mom.localeData().monthsParse(value);\n                // TODO: Another silent failure?\n                if (!isNumber(value)) {\n                    return mom;\n                }\n            }\n        }\n\n        dayOfMonth = Math.min(mom.date(), daysInMonth(mom.year(), value));\n        mom._d['set' + (mom._isUTC ? 'UTC' : '') + 'Month'](value, dayOfMonth);\n        return mom;\n    }"
+        }
+      ]
+    },
+    {
+      "windowId": "moment-window-4",
+      "sourceSha256": "41b7ae056ff412b7b48990c444e4d1d0e7d87cf323e7b33d46afcc9f1f0462f7",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function monthsRegex(isStrict) {\n        if (this._monthsParseExact) {\n            if (!hasOwnProp(this, '_monthsRegex')) {\n                computeMonthsParse.call(this);\n            }\n            if (isStrict) {\n                return this._monthsStrictRegex;\n            } else {\n                return this._monthsRegex;\n            }\n        } else {\n            if (!hasOwnProp(this, '_monthsRegex')) {\n                this._monthsRegex = defaultMonthsRegex;\n            }\n            return this._monthsStrictRegex && isStrict\n                ? this._monthsStrictRegex\n                : this._monthsRegex;\n        }\n    }"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function monthsRegex(isStrict) {\n        if (this._monthsParseExact) {\n            if (!hasOwnProp(this, '_monthsRegex')) {\n                computeMonthsParse.call(this);\n            }\n            if (isStrict) {\n                return this._monthsStrictRegex;\n            } else {\n                return this._monthsRegex;\n            }\n        } else {\n            if (!hasOwnProp(this, '_monthsRegex')) {\n                this._monthsRegex = defaultMonthsRegex;\n            }\n            return this._monthsStrictRegex && isStrict\n                ? this._monthsStrictRegex\n                : this._monthsRegex;\n        }\n    }"
+        }
+      ]
+    },
+    {
+      "windowId": "moment-window-5",
+      "sourceSha256": "460ef2149a003b4f291e714c77612c0e695810ec799ae928323cd25a184d1fb5",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function parseWeekday(input, locale) {\n        if (typeof input !== 'string') {\n            return input;\n        }\n\n        if (!isNaN(input)) {\n            return parseInt(input, 10);\n        }\n\n        input = locale.weekdaysParse(input);\n        if (typeof input === 'number') {\n            return input;\n        }\n\n        return null;\n    }"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function parseWeekday(input, locale) {\n        if (typeof input !== 'string') {\n            return input;\n        }\n\n        if (!isNaN(input)) {\n            return parseInt(input, 10);\n        }\n\n        input = locale.weekdaysParse(input);\n        if (typeof input === 'number') {\n            return input;\n        }\n\n        return null;\n    }"
+        }
+      ]
+    },
+    {
+      "windowId": "react-window-1",
+      "sourceSha256": "446c2e6c31ffb8e9c34156a6e9b89cb49859d68b07ecdf3bb2d223452926dd4a",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function getIteratorFn(maybeIterable) {\n  if (maybeIterable === null || typeof maybeIterable !== 'object') {\n    return null;\n  }\n\n  var maybeIterator = MAYBE_ITERATOR_SYMBOL && maybeIterable[MAYBE_ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL];\n\n  if (typeof maybeIterator === 'function') {\n    return maybeIterator;\n  }\n\n  return null;\n}"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function getIteratorFn(maybeIterable) {\n  if (maybeIterable === null || typeof maybeIterable !== 'object') {\n    return null;\n  }\n\n  var maybeIterator = MAYBE_ITERATOR_SYMBOL && maybeIterable[MAYBE_ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL];\n\n  if (typeof maybeIterator === 'function') {\n    return maybeIterator;\n  }\n\n  return null;\n}"
+        },
+        {
+          "name": "round5-single-return",
+          "code": "function getIteratorFn(maybeIterable) {\n  var maybeIterator;\n  return maybeIterable === null || typeof maybeIterable !== 'object' ? null : typeof (maybeIterator = MAYBE_ITERATOR_SYMBOL && maybeIterable[MAYBE_ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL]) === 'function' ? maybeIterator : null;\n}",
+          "kind": "cached-codex-rewrite"
+        }
+      ]
+    },
+    {
+      "windowId": "react-window-2",
+      "sourceSha256": "302979d7145d1dc6d946bd73f2a8d53680673fc738e6b14b0a5aebb87761b208",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function hasValidRef(config) {\n  {\n    if (hasOwnProperty.call(config, 'ref')) {\n      var getter = Object.getOwnPropertyDescriptor(config, 'ref').get;\n\n      if (getter && getter.isReactWarning) {\n        return false;\n      }\n    }\n  }\n\n  return config.ref !== undefined;\n}"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function hasValidRef(config) {\n  {\n    if (hasOwnProperty.call(config, 'ref')) {\n      var getter = Object.getOwnPropertyDescriptor(config, 'ref').get;\n\n      if (getter && getter.isReactWarning) {\n        return false;\n      }\n    }\n  }\n\n  return config.ref !== undefined;\n}"
+        }
+      ]
+    },
+    {
+      "windowId": "react-window-3",
+      "sourceSha256": "ae5edfded0838fb1e78ac9286e8b40f9d4110a3124ba13f27a04ce6846bc8058",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function hasValidKey(config) {\n  {\n    if (hasOwnProperty.call(config, 'key')) {\n      var getter = Object.getOwnPropertyDescriptor(config, 'key').get;\n\n      if (getter && getter.isReactWarning) {\n        return false;\n      }\n    }\n  }\n\n  return config.key !== undefined;\n}"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function hasValidKey(config) {\n  {\n    if (hasOwnProperty.call(config, 'key')) {\n      var getter = Object.getOwnPropertyDescriptor(config, 'key').get;\n\n      if (getter && getter.isReactWarning) {\n        return false;\n      }\n    }\n  }\n\n  return config.key !== undefined;\n}"
+        }
+      ]
+    },
+    {
+      "windowId": "react-window-4",
+      "sourceSha256": "27cb6339bdae7e2bc223a8f4b7d8f41db242758c6bb851c72796f5ba7fbd4005",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function getCurrentComponentErrorInfo(parentType) {\n  var info = getDeclarationErrorAddendum();\n\n  if (!info) {\n    var parentName = typeof parentType === 'string' ? parentType : parentType.displayName || parentType.name;\n\n    if (parentName) {\n      info = \"\\n\\nCheck the top-level render call using <\" + parentName + \">.\";\n    }\n  }\n\n  return info;\n}"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function getCurrentComponentErrorInfo(parentType) {\n  var info = getDeclarationErrorAddendum();\n\n  if (!info) {\n    var parentName = typeof parentType === 'string' ? parentType : parentType.displayName || parentType.name;\n\n    if (parentName) {\n      info = \"\\n\\nCheck the top-level render call using <\" + parentName + \">.\";\n    }\n  }\n\n  return info;\n}"
+        }
+      ]
+    },
+    {
+      "windowId": "react-window-5",
+      "sourceSha256": "4f6b205cf895d899fb04a8a75fb0fa8a5e5b6cc21a395668e27e9d97bcdaa257",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function getDeclarationErrorAddendum() {\n  if (ReactCurrentOwner.current) {\n    var name = getComponentName(ReactCurrentOwner.current.type);\n\n    if (name) {\n      return '\\n\\nCheck the render method of `' + name + '`.';\n    }\n  }\n\n  return '';\n}"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function getDeclarationErrorAddendum() {\n  if (ReactCurrentOwner.current) {\n    var name = getComponentName(ReactCurrentOwner.current.type);\n\n    if (name) {\n      return '\\n\\nCheck the render method of `' + name + '`.';\n    }\n  }\n\n  return '';\n}"
+        }
+      ]
+    },
+    {
+      "windowId": "terser-window-1",
+      "sourceSha256": "ff30823e1a5cf39d684c0c46d89b6c7c02787ab1a5386582fe5f7b31218c74a9",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function parse_js_number(num, allow_e = true) {\n    if (!allow_e && num.includes(\"e\")) {\n        return NaN;\n    }\n    if (RE_HEX_NUMBER.test(num)) {\n        return parseInt(num.substr(2), 16);\n    } else if (RE_OCT_NUMBER.test(num)) {\n        return parseInt(num.substr(1), 8);\n    } else if (RE_ES6_OCT_NUMBER.test(num)) {\n        return parseInt(num.substr(2), 8);\n    } else if (RE_BIN_NUMBER.test(num)) {\n        return parseInt(num.substr(2), 2);\n    } else if (RE_DEC_NUMBER.test(num)) {\n        return parseFloat(num);\n    } else {\n        var val = parseFloat(num);\n        if (val == num) return val;\n    }\n}"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function parse_js_number(num, allow_e = true) {\n    if (!allow_e && num.includes(\"e\")) {\n        return NaN;\n    }\n    if (RE_HEX_NUMBER.test(num)) {\n        return parseInt(num.substr(2), 16);\n    } else if (RE_OCT_NUMBER.test(num)) {\n        return parseInt(num.substr(1), 8);\n    } else if (RE_ES6_OCT_NUMBER.test(num)) {\n        return parseInt(num.substr(2), 8);\n    } else if (RE_BIN_NUMBER.test(num)) {\n        return parseInt(num.substr(2), 2);\n    } else if (RE_DEC_NUMBER.test(num)) {\n        return parseFloat(num);\n    } else {\n        var val = parseFloat(num);\n        if (val == num) return val;\n    }\n}"
+        },
+        {
+          "name": "round5-early-return-flat",
+          "code": "function parse_js_number(num, allow_e = true) {\n  if (!allow_e && num.includes(\"e\")) return NaN;\n  if (RE_HEX_NUMBER.test(num)) return parseInt(num.substr(2), 16);\n  if (RE_OCT_NUMBER.test(num)) return parseInt(num.substr(1), 8);\n  if (RE_ES6_OCT_NUMBER.test(num)) return parseInt(num.substr(2), 8);\n  if (RE_BIN_NUMBER.test(num)) return parseInt(num.substr(2), 2);\n  if (RE_DEC_NUMBER.test(num)) return parseFloat(num);\n  var val = parseFloat(num);\n  if (val == num) return val;\n}",
+          "kind": "cached-codex-rewrite"
+        }
+      ]
+    },
+    {
+      "windowId": "terser-window-2",
+      "sourceSha256": "4a1671b0056ec95dd17dd97407d0dcac20d88ec6fd7a382887d26acd77d38595",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function is_lhs_read_only(lhs) {\n    if (lhs instanceof AST_This) return true;\n    if (lhs instanceof AST_SymbolRef) return lhs.definition().orig[0] instanceof AST_SymbolLambda;\n    if (lhs instanceof AST_PropAccess) {\n        lhs = lhs.expression;\n        if (lhs instanceof AST_SymbolRef) {\n            if (lhs.is_immutable()) return false;\n            lhs = lhs.fixed_value();\n        }\n        if (!lhs) return true;\n        if (lhs instanceof AST_RegExp) return false;\n        if (lhs instanceof AST_Constant) return true;\n        return is_lhs_read_only(lhs);\n    }\n    return false;\n}"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function is_lhs_read_only(lhs) {\n    if (lhs instanceof AST_This) return true;\n    if (lhs instanceof AST_SymbolRef) return lhs.definition().orig[0] instanceof AST_SymbolLambda;\n    if (lhs instanceof AST_PropAccess) {\n        lhs = lhs.expression;\n        if (lhs instanceof AST_SymbolRef) {\n            if (lhs.is_immutable()) return false;\n            lhs = lhs.fixed_value();\n        }\n        if (!lhs) return true;\n        if (lhs instanceof AST_RegExp) return false;\n        if (lhs instanceof AST_Constant) return true;\n        return is_lhs_read_only(lhs);\n    }\n    return false;\n}"
+        }
+      ]
+    },
+    {
+      "windowId": "terser-window-3",
+      "sourceSha256": "fab295259d50ca3707aa5d850a8139862b19ed0c9440d9ab53a47c70fc197191",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function single_arg_diff() {\n        var a = consequent.args;\n        var b = alternative.args;\n        for (var i = 0, len = a.length; i < len; i++) {\n            if (a[i] instanceof AST_Expansion) return;\n            if (!a[i].equivalent_to(b[i])) {\n                if (b[i] instanceof AST_Expansion) return;\n                for (var j = i + 1; j < len; j++) {\n                    if (a[j] instanceof AST_Expansion) return;\n                    if (!a[j].equivalent_to(b[j])) return;\n                }\n                return i;\n            }\n        }\n    }"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function single_arg_diff() {\n        var a = consequent.args;\n        var b = alternative.args;\n        for (var i = 0, len = a.length; i < len; i++) {\n            if (a[i] instanceof AST_Expansion) return;\n            if (!a[i].equivalent_to(b[i])) {\n                if (b[i] instanceof AST_Expansion) return;\n                for (var j = i + 1; j < len; j++) {\n                    if (a[j] instanceof AST_Expansion) return;\n                    if (!a[j].equivalent_to(b[j])) return;\n                }\n                return i;\n            }\n        }\n    }"
+        }
+      ]
+    },
+    {
+      "windowId": "terser-window-4",
+      "sourceSha256": "ab153eeee317092da77abb6139e31d24dc8951173ab3df64c5d953d2599cd808",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function has_nested_break(root) {\n        let has_break = false;\n        let tw = new TreeWalker(node => {\n            if (has_break) return true;\n            if (node instanceof AST_Lambda) return true;\n            if (node instanceof AST_SimpleStatement) return true;\n            if (!is_break(node, tw)) return;\n            let parent = tw.parent();\n            if (\n                parent instanceof AST_SwitchBranch\n                && parent.body[parent.body.length - 1] === node\n            ) {\n                return;\n            }\n            has_break = true;\n        });\n        root.walk(tw);\n        return has_break;\n    }"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function has_nested_break(root) {\n        let has_break = false;\n        let tw = new TreeWalker(node => {\n            if (has_break) return true;\n            if (node instanceof AST_Lambda) return true;\n            if (node instanceof AST_SimpleStatement) return true;\n            if (!is_break(node, tw)) return;\n            let parent = tw.parent();\n            if (\n                parent instanceof AST_SwitchBranch\n                && parent.body[parent.body.length - 1] === node\n            ) {\n                return;\n            }\n            has_break = true;\n        });\n        root.walk(tw);\n        return has_break;\n    }"
+        }
+      ]
+    },
+    {
+      "windowId": "terser-window-5",
+      "sourceSha256": "d560c88d933aa1e7d8c45ee563c34a9016e32318e1d2afd72d02910ffbe6285e",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function can_mangle(name) {\n        if (unmangleable.has(name)) return false;\n        if (reserved.has(name)) return false;\n        if (options.only_cache) {\n            return cache.has(name);\n        }\n        if (/^-?[0-9]+(\\.[0-9]+)?(e[+-][0-9]+)?$/.test(name)) return false;\n        return true;\n    }"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function can_mangle(name) {\n        if (unmangleable.has(name)) return false;\n        if (reserved.has(name)) return false;\n        if (options.only_cache) {\n            return cache.has(name);\n        }\n        if (/^-?[0-9]+(\\.[0-9]+)?(e[+-][0-9]+)?$/.test(name)) return false;\n        return true;\n    }"
+        }
+      ]
+    },
+    {
+      "windowId": "three-window-1",
+      "sourceSha256": "dfb20c0035d01f56afa398444861fc58e9312b059aa3677dd20afa3bcc35fe35",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function painterSortStable(a, b) {\n\t\tif (a.groupOrder !== b.groupOrder) {\n\t\t\treturn a.groupOrder - b.groupOrder;\n\t\t} else if (a.renderOrder !== b.renderOrder) {\n\t\t\treturn a.renderOrder - b.renderOrder;\n\t\t} else if (a.program !== b.program) {\n\t\t\treturn a.program.id - b.program.id;\n\t\t} else if (a.material.id !== b.material.id) {\n\t\t\treturn a.material.id - b.material.id;\n\t\t} else if (a.z !== b.z) {\n\t\t\treturn a.z - b.z;\n\t\t} else {\n\t\t\treturn a.id - b.id;\n\t\t}\n\t}"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function painterSortStable(a, b) {\n\t\tif (a.groupOrder !== b.groupOrder) {\n\t\t\treturn a.groupOrder - b.groupOrder;\n\t\t} else if (a.renderOrder !== b.renderOrder) {\n\t\t\treturn a.renderOrder - b.renderOrder;\n\t\t} else if (a.program !== b.program) {\n\t\t\treturn a.program.id - b.program.id;\n\t\t} else if (a.material.id !== b.material.id) {\n\t\t\treturn a.material.id - b.material.id;\n\t\t} else if (a.z !== b.z) {\n\t\t\treturn a.z - b.z;\n\t\t} else {\n\t\t\treturn a.id - b.id;\n\t\t}\n\t}"
+        },
+        {
+          "name": "round5-drop-else-chain",
+          "code": "function painterSortStable(a, b) {\n  if (a.groupOrder !== b.groupOrder) return a.groupOrder - b.groupOrder;\n  if (a.renderOrder !== b.renderOrder) return a.renderOrder - b.renderOrder;\n  if (a.program !== b.program) return a.program.id - b.program.id;\n  if (a.material.id !== b.material.id) return a.material.id - b.material.id;\n  if (a.z !== b.z) return a.z - b.z;\n  return a.id - b.id;\n}",
+          "kind": "cached-codex-rewrite"
+        }
+      ]
+    },
+    {
+      "windowId": "three-window-2",
+      "sourceSha256": "6afe152f1008a4d7fde1a27384841e682e682ab902531ad7498d4f15ed7bbb66",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function intersects(p1, q1, p2, q2) {\n\t\tvar o1 = sign(area(p1, q1, p2));\n\t\tvar o2 = sign(area(p1, q1, q2));\n\t\tvar o3 = sign(area(p2, q2, p1));\n\t\tvar o4 = sign(area(p2, q2, q1));\n\t\tif (o1 !== o2 && o3 !== o4) return true; // general case\n\n\t\tif (o1 === 0 && onSegment(p1, p2, q1)) return true; // p1, q1 and p2 are collinear and p2 lies on p1q1\n\n\t\tif (o2 === 0 && onSegment(p1, q2, q1)) return true; // p1, q1 and q2 are collinear and q2 lies on p1q1\n\n\t\tif (o3 === 0 && onSegment(p2, p1, q2)) return true; // p2, q2 and p1 are collinear and p1 lies on p2q2\n\n\t\tif (o4 === 0 && onSegment(p2, q1, q2)) return true; // p2, q2 and q1 are collinear and q1 lies on p2q2\n\n\t\treturn false;\n\t}"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function intersects(p1, q1, p2, q2) {\n\t\tvar o1 = sign(area(p1, q1, p2));\n\t\tvar o2 = sign(area(p1, q1, q2));\n\t\tvar o3 = sign(area(p2, q2, p1));\n\t\tvar o4 = sign(area(p2, q2, q1));\n\t\tif (o1 !== o2 && o3 !== o4) return true; // general case\n\n\t\tif (o1 === 0 && onSegment(p1, p2, q1)) return true; // p1, q1 and p2 are collinear and p2 lies on p1q1\n\n\t\tif (o2 === 0 && onSegment(p1, q2, q1)) return true; // p1, q1 and q2 are collinear and q2 lies on p1q1\n\n\t\tif (o3 === 0 && onSegment(p2, p1, q2)) return true; // p2, q2 and p1 are collinear and p1 lies on p2q2\n\n\t\tif (o4 === 0 && onSegment(p2, q1, q2)) return true; // p2, q2 and q1 are collinear and q1 lies on p2q2\n\n\t\treturn false;\n\t}"
+        }
+      ]
+    },
+    {
+      "windowId": "three-window-3",
+      "sourceSha256": "a34f0a0bf38d305bb0e5034d76d02b44d6f9267a109643c6297d6280435b299d",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function needsUpdate(geometry, index) {\n\t\t\tvar cachedAttributes = currentState.attributes;\n\t\t\tvar geometryAttributes = geometry.attributes;\n\t\t\tvar attributesNum = 0;\n\n\t\t\tfor (var key in geometryAttributes) {\n\t\t\t\tvar cachedAttribute = cachedAttributes[key];\n\t\t\t\tvar geometryAttribute = geometryAttributes[key];\n\t\t\t\tif (cachedAttribute === undefined) return true;\n\t\t\t\tif (cachedAttribute.attribute !== geometryAttribute) return true;\n\t\t\t\tif (cachedAttribute.data !== geometryAttribute.data) return true;\n\t\t\t\tattributesNum++;\n\t\t\t}\n\n\t\t\tif (currentState.attributesNum !== attributesNum) return true;\n\t\t\tif (currentState.index !== index) return true;\n\t\t\treturn false;\n\t\t}"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function needsUpdate(geometry, index) {\n\t\t\tvar cachedAttributes = currentState.attributes;\n\t\t\tvar geometryAttributes = geometry.attributes;\n\t\t\tvar attributesNum = 0;\n\n\t\t\tfor (var key in geometryAttributes) {\n\t\t\t\tvar cachedAttribute = cachedAttributes[key];\n\t\t\t\tvar geometryAttribute = geometryAttributes[key];\n\t\t\t\tif (cachedAttribute === undefined) return true;\n\t\t\t\tif (cachedAttribute.attribute !== geometryAttribute) return true;\n\t\t\t\tif (cachedAttribute.data !== geometryAttribute.data) return true;\n\t\t\t\tattributesNum++;\n\t\t\t}\n\n\t\t\tif (currentState.attributesNum !== attributesNum) return true;\n\t\t\tif (currentState.index !== index) return true;\n\t\t\treturn false;\n\t\t}"
+        }
+      ]
+    },
+    {
+      "windowId": "three-window-4",
+      "sourceSha256": "41831c5c8d05ba26b3a3000c3e57f5b0fd5536890c7435ba428649f90e3ab272",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function hue2rgb(p, q, t) {\n\t\tif (t < 0) t += 1;\n\t\tif (t > 1) t -= 1;\n\t\tif (t < 1 / 6) return p + (q - p) * 6 * t;\n\t\tif (t < 1 / 2) return q;\n\t\tif (t < 2 / 3) return p + (q - p) * 6 * (2 / 3 - t);\n\t\treturn p;\n\t}"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function hue2rgb(p, q, t) {\n\t\tif (t < 0) t += 1;\n\t\tif (t > 1) t -= 1;\n\t\tif (t < 1 / 6) return p + (q - p) * 6 * t;\n\t\tif (t < 1 / 2) return q;\n\t\tif (t < 2 / 3) return p + (q - p) * 6 * (2 / 3 - t);\n\t\treturn p;\n\t}"
+        }
+      ]
+    },
+    {
+      "windowId": "three-window-5",
+      "sourceSha256": "6184df3b5f7eb0cdc282bc0915f7895105c061079f2e2a166e7b3041b07e31c5",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function setFromArray(array) {\n\t\t\tvar minX = +Infinity;\n\t\t\tvar minY = +Infinity;\n\t\t\tvar minZ = +Infinity;\n\t\t\tvar maxX = -Infinity;\n\t\t\tvar maxY = -Infinity;\n\t\t\tvar maxZ = -Infinity;\n\n\t\t\tfor (var i = 0, l = array.length; i < l; i += 3) {\n\t\t\t\tvar x = array[i];\n\t\t\t\tvar y = array[i + 1];\n\t\t\t\tvar z = array[i + 2];\n\t\t\t\tif (x < minX) minX = x;\n\t\t\t\tif (y < minY) minY = y;\n\t\t\t\tif (z < minZ) minZ = z;\n\t\t\t\tif (x > maxX) maxX = x;\n\t\t\t\tif (y > maxY) maxY = y;\n\t\t\t\tif (z > maxZ) maxZ = z;\n\t\t\t}\n\n\t\t\tthis.min.set(minX, minY, minZ);\n\t\t\tthis.max.set(maxX, maxY, maxZ);\n\t\t\treturn this;\n\t\t}"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function setFromArray(array) {\n\t\t\tvar minX = +Infinity;\n\t\t\tvar minY = +Infinity;\n\t\t\tvar minZ = +Infinity;\n\t\t\tvar maxX = -Infinity;\n\t\t\tvar maxY = -Infinity;\n\t\t\tvar maxZ = -Infinity;\n\n\t\t\tfor (var i = 0, l = array.length; i < l; i += 3) {\n\t\t\t\tvar x = array[i];\n\t\t\t\tvar y = array[i + 1];\n\t\t\t\tvar z = array[i + 2];\n\t\t\t\tif (x < minX) minX = x;\n\t\t\t\tif (y < minY) minY = y;\n\t\t\t\tif (z < minZ) minZ = z;\n\t\t\t\tif (x > maxX) maxX = x;\n\t\t\t\tif (y > maxY) maxY = y;\n\t\t\t\tif (z > maxZ) maxZ = z;\n\t\t\t}\n\n\t\t\tthis.min.set(minX, minY, minZ);\n\t\t\tthis.max.set(maxX, maxY, maxZ);\n\t\t\treturn this;\n\t\t}"
+        }
+      ]
+    },
+    {
+      "windowId": "victory-window-1",
+      "sourceSha256": "87543739cfc28c596c3acfb1b18ab165cca8585c2be28e5e472bced3be603029",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function(values, valueof) {\n  let min;\n  let max;\n  if (valueof === undefined) {\n    for (const value of values) {\n      if (value != null) {\n        if (min === undefined) {\n          if (value >= value) min = max = value;\n        } else {\n          if (min > value) min = value;\n          if (max < value) max = value;\n        }\n      }\n    }\n  } else {\n    let index = -1;\n    for (let value of values) {\n      if ((value = valueof(value, ++index, values)) != null) {\n        if (min === undefined) {\n          if (value >= value) min = max = value;\n        } else {\n          if (min > value) min = value;\n          if (max < value) max = value;\n        }\n      }\n    }\n  }\n  return [min, max];\n}"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function(values, valueof) {\n  let min;\n  let max;\n  if (valueof === undefined) {\n    for (const value of values) {\n      if (value != null) {\n        if (min === undefined) {\n          if (value >= value) min = max = value;\n        } else {\n          if (min > value) min = value;\n          if (max < value) max = value;\n        }\n      }\n    }\n  } else {\n    let index = -1;\n    for (let value of values) {\n      if ((value = valueof(value, ++index, values)) != null) {\n        if (min === undefined) {\n          if (value >= value) min = max = value;\n        } else {\n          if (min > value) min = value;\n          if (max < value) max = value;\n        }\n      }\n    }\n  }\n  return [min, max];\n}"
+        },
+        {
+          "name": "round5-merge-valueof-loops",
+          "code": "function (values, valueof) {\n  let min, max, index = -1;\n  for (let value of values) {\n    if (valueof !== undefined) value = valueof(value, ++index, values);\n    if (value != null) {\n      if (min === undefined) {\n        if (value >= value) min = max = value;\n      } else {\n        if (min > value) min = value;\n        if (max < value) max = value;\n      }\n    }\n  }\n  return [min, max];\n}",
+          "kind": "cached-codex-rewrite"
+        }
+      ]
+    },
+    {
+      "windowId": "victory-window-2",
+      "sourceSha256": "61145a6e7f19331f5c9d18577557d9367473a4de94c90d16b373791c5feda30c",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function (degree, labelPlacement) {\n  if (labelPlacement === \"perpendicular\") {\n    return degree > 90 && degree < 270 ? \"bottom\" : \"top\";\n  } else if (labelPlacement === \"parallel\") {\n    return degree >= 0 && degree <= 180 ? \"right\" : \"left\";\n  }\n\n  if (degree < 45 || degree > 315) {\n    return \"top\";\n  } else if (degree >= 45 && degree < 135) {\n    return \"right\";\n  } else if (degree >= 135 && degree < 225) {\n    return \"bottom\";\n  } else {\n    return \"left\";\n  }\n}"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function (degree, labelPlacement) {\n  if (labelPlacement === \"perpendicular\") {\n    return degree > 90 && degree < 270 ? \"bottom\" : \"top\";\n  } else if (labelPlacement === \"parallel\") {\n    return degree >= 0 && degree <= 180 ? \"right\" : \"left\";\n  }\n\n  if (degree < 45 || degree > 315) {\n    return \"top\";\n  } else if (degree >= 45 && degree < 135) {\n    return \"right\";\n  } else if (degree >= 135 && degree < 225) {\n    return \"bottom\";\n  } else {\n    return \"left\";\n  }\n}"
+        }
+      ]
+    },
+    {
+      "windowId": "victory-window-3",
+      "sourceSha256": "fbe85173b78216b63f5605d6652c6bf5a01c83c6038ea5731736159c8e7aa61c",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function hslConvert(o) {\n  if (o instanceof Hsl) return new Hsl(o.h, o.s, o.l, o.opacity);\n  if (!(o instanceof Color)) o = color(o);\n  if (!o) return new Hsl;\n  if (o instanceof Hsl) return o;\n  o = o.rgb();\n  var r = o.r / 255,\n      g = o.g / 255,\n      b = o.b / 255,\n      min = Math.min(r, g, b),\n      max = Math.max(r, g, b),\n      h = NaN,\n      s = max - min,\n      l = (max + min) / 2;\n  if (s) {\n    if (r === max) h = (g - b) / s + (g < b) * 6;\n    else if (g === max) h = (b - r) / s + 2;\n    else h = (r - g) / s + 4;\n    s /= l < 0.5 ? max + min : 2 - max - min;\n    h *= 60;\n  } else {\n    s = l > 0 && l < 1 ? 0 : h;\n  }\n  return new Hsl(h, s, l, o.opacity);\n}"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function hslConvert(o) {\n  if (o instanceof Hsl) return new Hsl(o.h, o.s, o.l, o.opacity);\n  if (!(o instanceof Color)) o = color(o);\n  if (!o) return new Hsl;\n  if (o instanceof Hsl) return o;\n  o = o.rgb();\n  var r = o.r / 255,\n      g = o.g / 255,\n      b = o.b / 255,\n      min = Math.min(r, g, b),\n      max = Math.max(r, g, b),\n      h = NaN,\n      s = max - min,\n      l = (max + min) / 2;\n  if (s) {\n    if (r === max) h = (g - b) / s + (g < b) * 6;\n    else if (g === max) h = (b - r) / s + 2;\n    else h = (r - g) / s + 4;\n    s /= l < 0.5 ? max + min : 2 - max - min;\n    h *= 60;\n  } else {\n    s = l > 0 && l < 1 ? 0 : h;\n  }\n  return new Hsl(h, s, l, o.opacity);\n}"
+        }
+      ]
+    },
+    {
+      "windowId": "victory-window-4",
+      "sourceSha256": "579e139a7bc427464033060b8ba9c2c054767d96b185647468244da16ac04c0e",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function isEmpty(value) {\n  if (value == null) {\n    return true;\n  }\n  if (isArrayLike(value) &&\n      (isArray(value) || typeof value == 'string' || typeof value.splice == 'function' ||\n        isBuffer(value) || isTypedArray(value) || isArguments(value))) {\n    return !value.length;\n  }\n  var tag = getTag(value);\n  if (tag == mapTag || tag == setTag) {\n    return !value.size;\n  }\n  if (isPrototype(value)) {\n    return !baseKeys(value).length;\n  }\n  for (var key in value) {\n    if (hasOwnProperty.call(value, key)) {\n      return false;\n    }\n  }\n  return true;\n}"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function isEmpty(value) {\n  if (value == null) {\n    return true;\n  }\n  if (isArrayLike(value) &&\n      (isArray(value) || typeof value == 'string' || typeof value.splice == 'function' ||\n        isBuffer(value) || isTypedArray(value) || isArguments(value))) {\n    return !value.length;\n  }\n  var tag = getTag(value);\n  if (tag == mapTag || tag == setTag) {\n    return !value.size;\n  }\n  if (isPrototype(value)) {\n    return !baseKeys(value).length;\n  }\n  for (var key in value) {\n    if (hasOwnProperty.call(value, key)) {\n      return false;\n    }\n  }\n  return true;\n}"
+        }
+      ]
+    },
+    {
+      "windowId": "victory-window-5",
+      "sourceSha256": "1911e763b1e0e12edfde5cd45dba4484054ef85a80d5221924890729f09523de",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function(compare) {\n  if (compare.length === 1) compare = ascendingComparator(compare);\n  return {\n    left: function(a, x, lo, hi) {\n      if (lo == null) lo = 0;\n      if (hi == null) hi = a.length;\n      while (lo < hi) {\n        var mid = lo + hi >>> 1;\n        if (compare(a[mid], x) < 0) lo = mid + 1;\n        else hi = mid;\n      }\n      return lo;\n    },\n    right: function(a, x, lo, hi) {\n      if (lo == null) lo = 0;\n      if (hi == null) hi = a.length;\n      while (lo < hi) {\n        var mid = lo + hi >>> 1;\n        if (compare(a[mid], x) > 0) hi = mid;\n        else lo = mid + 1;\n      }\n      return lo;\n    }\n  };\n}"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function(compare) {\n  if (compare.length === 1) compare = ascendingComparator(compare);\n  return {\n    left: function(a, x, lo, hi) {\n      if (lo == null) lo = 0;\n      if (hi == null) hi = a.length;\n      while (lo < hi) {\n        var mid = lo + hi >>> 1;\n        if (compare(a[mid], x) < 0) lo = mid + 1;\n        else hi = mid;\n      }\n      return lo;\n    },\n    right: function(a, x, lo, hi) {\n      if (lo == null) lo = 0;\n      if (hi == null) hi = a.length;\n      while (lo < hi) {\n        var mid = lo + hi >>> 1;\n        if (compare(a[mid], x) > 0) hi = mid;\n        else lo = mid + 1;\n      }\n      return lo;\n    }\n  };\n}"
+        }
+      ]
+    },
+    {
+      "windowId": "vue-window-1",
+      "sourceSha256": "9cf1d19809b39ac343143f08354a88c61fc8a541e6216c6bc36d3f61df1401b6",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function registerRef (vnode, isRemoval) {\n    var key = vnode.data.ref;\n    if (!isDef(key)) { return }\n\n    var vm = vnode.context;\n    var ref = vnode.componentInstance || vnode.elm;\n    var refs = vm.$refs;\n    if (isRemoval) {\n      if (Array.isArray(refs[key])) {\n        remove(refs[key], ref);\n      } else if (refs[key] === ref) {\n        refs[key] = undefined;\n      }\n    } else {\n      if (vnode.data.refInFor) {\n        if (!Array.isArray(refs[key])) {\n          refs[key] = [ref];\n        } else if (refs[key].indexOf(ref) < 0) {\n          // $flow-disable-line\n          refs[key].push(ref);\n        }\n      } else {\n        refs[key] = ref;\n      }\n    }\n  }"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function registerRef (vnode, isRemoval) {\n    var key = vnode.data.ref;\n    if (!isDef(key)) { return }\n\n    var vm = vnode.context;\n    var ref = vnode.componentInstance || vnode.elm;\n    var refs = vm.$refs;\n    if (isRemoval) {\n      if (Array.isArray(refs[key])) {\n        remove(refs[key], ref);\n      } else if (refs[key] === ref) {\n        refs[key] = undefined;\n      }\n    } else {\n      if (vnode.data.refInFor) {\n        if (!Array.isArray(refs[key])) {\n          refs[key] = [ref];\n        } else if (refs[key].indexOf(ref) < 0) {\n          // $flow-disable-line\n          refs[key].push(ref);\n        }\n      } else {\n        refs[key] = ref;\n      }\n    }\n  }"
+        },
+        {
+          "name": "round5-flatten-ref-branches",
+          "code": "function registerRef(vnode, isRemoval) {\n  var key = vnode.data.ref;\n  if (!isDef(key)) return;\n  var vm = vnode.context, ref = vnode.componentInstance || vnode.elm, refs = vm.$refs;\n  if (isRemoval) Array.isArray(refs[key]) ? remove(refs[key], ref) : refs[key] === ref && (refs[key] = undefined);\n  else if (vnode.data.refInFor) Array.isArray(refs[key]) ? refs[key].indexOf(ref) < 0 && refs[key].push(ref) : refs[key] = [ref];\n  else refs[key] = ref;\n}",
+          "kind": "cached-codex-rewrite"
+        }
+      ]
+    },
+    {
+      "windowId": "vue-window-2",
+      "sourceSha256": "426081b060e89b2c38aafed17a6bac23dbef44e724508e7b4ffd8327b6fecb4f",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function isUnknownElement (tag) {\n    /* istanbul ignore if */\n    if (!inBrowser) {\n      return true\n    }\n    if (isReservedTag(tag)) {\n      return false\n    }\n    tag = tag.toLowerCase();\n    /* istanbul ignore if */\n    if (unknownElementCache[tag] != null) {\n      return unknownElementCache[tag]\n    }\n    var el = document.createElement(tag);\n    if (tag.indexOf('-') > -1) {\n      // http://stackoverflow.com/a/28210364/1070244\n      return (unknownElementCache[tag] = (\n        el.constructor === window.HTMLUnknownElement ||\n        el.constructor === window.HTMLElement\n      ))\n    } else {\n      return (unknownElementCache[tag] = /HTMLUnknownElement/.test(el.toString()))\n    }\n  }"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function isUnknownElement (tag) {\n    /* istanbul ignore if */\n    if (!inBrowser) {\n      return true\n    }\n    if (isReservedTag(tag)) {\n      return false\n    }\n    tag = tag.toLowerCase();\n    /* istanbul ignore if */\n    if (unknownElementCache[tag] != null) {\n      return unknownElementCache[tag]\n    }\n    var el = document.createElement(tag);\n    if (tag.indexOf('-') > -1) {\n      // http://stackoverflow.com/a/28210364/1070244\n      return (unknownElementCache[tag] = (\n        el.constructor === window.HTMLUnknownElement ||\n        el.constructor === window.HTMLElement\n      ))\n    } else {\n      return (unknownElementCache[tag] = /HTMLUnknownElement/.test(el.toString()))\n    }\n  }"
+        }
+      ]
+    },
+    {
+      "windowId": "vue-window-3",
+      "sourceSha256": "0264dbab97f5478dad0f08265fda211fae0dfc51f481bdfc01d3be5788c7fdb7",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function processIfConditions (el, parent) {\n    var prev = findPrevElement(parent.children);\n    if (prev && prev.if) {\n      addIfCondition(prev, {\n        exp: el.elseif,\n        block: el\n      });\n    } else {\n      warn$2(\n        \"v-\" + (el.elseif ? ('else-if=\"' + el.elseif + '\"') : 'else') + \" \" +\n        \"used on element <\" + (el.tag) + \"> without corresponding v-if.\",\n        el.rawAttrsMap[el.elseif ? 'v-else-if' : 'v-else']\n      );\n    }\n  }"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function processIfConditions (el, parent) {\n    var prev = findPrevElement(parent.children);\n    if (prev && prev.if) {\n      addIfCondition(prev, {\n        exp: el.elseif,\n        block: el\n      });\n    } else {\n      warn$2(\n        \"v-\" + (el.elseif ? ('else-if=\"' + el.elseif + '\"') : 'else') + \" \" +\n        \"used on element <\" + (el.tag) + \"> without corresponding v-if.\",\n        el.rawAttrsMap[el.elseif ? 'v-else-if' : 'v-else']\n      );\n    }\n  }"
+        }
+      ]
+    },
+    {
+      "windowId": "vue-window-4",
+      "sourceSha256": "b3dc2e2f9fb3d85cb6f6660c30a96b6df2cf51aa3f99f2d9fbd43a2d19195a91",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function genOnce (el, state) {\n    el.onceProcessed = true;\n    if (el.if && !el.ifProcessed) {\n      return genIf(el, state)\n    } else if (el.staticInFor) {\n      var key = '';\n      var parent = el.parent;\n      while (parent) {\n        if (parent.for) {\n          key = parent.key;\n          break\n        }\n        parent = parent.parent;\n      }\n      if (!key) {\n        state.warn(\n          \"v-once can only be used inside v-for that is keyed. \",\n          el.rawAttrsMap['v-once']\n        );\n        return genElement(el, state)\n      }\n      return (\"_o(\" + (genElement(el, state)) + \",\" + (state.onceId++) + \",\" + key + \")\")\n    } else {\n      return genStatic(el, state)\n    }\n  }"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function genOnce (el, state) {\n    el.onceProcessed = true;\n    if (el.if && !el.ifProcessed) {\n      return genIf(el, state)\n    } else if (el.staticInFor) {\n      var key = '';\n      var parent = el.parent;\n      while (parent) {\n        if (parent.for) {\n          key = parent.key;\n          break\n        }\n        parent = parent.parent;\n      }\n      if (!key) {\n        state.warn(\n          \"v-once can only be used inside v-for that is keyed. \",\n          el.rawAttrsMap['v-once']\n        );\n        return genElement(el, state)\n      }\n      return (\"_o(\" + (genElement(el, state)) + \",\" + (state.onceId++) + \",\" + key + \")\")\n    } else {\n      return genStatic(el, state)\n    }\n  }"
+        }
+      ]
+    },
+    {
+      "windowId": "vue-window-5",
+      "sourceSha256": "a50860b327c0c7dcc853c7023f37f2e99e12446f8fa3aa480152ffcaed254c64",
+      "responses": [
+        {
+          "name": "copy-original",
+          "kind": "control",
+          "code": "function processIf (el) {\n    var exp = getAndRemoveAttr(el, 'v-if');\n    if (exp) {\n      el.if = exp;\n      addIfCondition(el, {\n        exp: exp,\n        block: el\n      });\n    } else {\n      if (getAndRemoveAttr(el, 'v-else') != null) {\n        el.else = true;\n      }\n      var elseif = getAndRemoveAttr(el, 'v-else-if');\n      if (elseif) {\n        el.elseif = elseif;\n      }\n    }\n  }"
+        },
+        {
+          "name": "copy-original-alt",
+          "kind": "control",
+          "code": "function processIf (el) {\n    var exp = getAndRemoveAttr(el, 'v-if');\n    if (exp) {\n      el.if = exp;\n      addIfCondition(el, {\n        exp: exp,\n        block: el\n      });\n    } else {\n      if (getAndRemoveAttr(el, 'v-else') != null) {\n        el.else = true;\n      }\n      var elseif = getAndRemoveAttr(el, 'v-else-if');\n      if (elseif) {\n        el.elseif = elseif;\n      }\n    }\n  }"
+        }
+      ]
+    }
+  ]
+}

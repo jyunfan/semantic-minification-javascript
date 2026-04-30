@@ -1,0 +1,938 @@
+{
+  "generatedAt": "2026-04-30T18:30:37.573Z",
+  "benchmarkDir": "benchmarks/round2",
+  "windowsPerArtifact": 5,
+  "selectionPolicy": {
+    "nodeType": "Function",
+    "minChars": 120,
+    "maxChars": 700,
+    "requiredSyntax": [
+      "if",
+      "conditional expression"
+    ],
+    "rejectedSyntax": [
+      "eval",
+      "with",
+      "Function constructor",
+      "super",
+      "yield",
+      "await"
+    ],
+    "ordering": [
+      "score desc",
+      "sourceWindowBytes asc",
+      "start asc"
+    ]
+  },
+  "windows": [
+    {
+      "id": "antd-window-1",
+      "rank": 1,
+      "artifact": "antd",
+      "start": 1252132,
+      "end": 1252720,
+      "sourceWindowBytes": 588,
+      "sourceSha256": "f5fca5a0257e0f0438f04bc972fec068c6e372859366c9060390f9d1518455b8",
+      "score": 53,
+      "features": [
+        "if",
+        "return",
+        "conditional"
+      ],
+      "preview": "function getPositionCls(ele, idx) {\n  if (mode === 'alternate') {\n    if (ele.props.position === 'right') return \"\".concat(prefixCls, \"-item-right\");\n    if (ele.props.position === 'left') return \"\".concat(prefixCls, \"-item-left\");\n    return idx % 2 === 0 ? \"\".concat(prefixCls, \"-item-left\") : \"\".concat(prefixCls, \"-item-right\");\n  }\n  if (mode === 'left') return \"\".concat(prefixCls, \"-item-left\");\n  if (mode === 'right') return \"\".concat(prefixCls, \"-item-right\");\n  if (ele.props.position === 'right') return \"\".concat(prefixCls, \"-item-right\");\n  return '';\n}"
+    },
+    {
+      "id": "antd-window-2",
+      "rank": 2,
+      "artifact": "antd",
+      "start": 6552687,
+      "end": 6553103,
+      "sourceWindowBytes": 416,
+      "sourceSha256": "b06f8b8438dda00569407b613ff969cc08d48b36e269aceae679da1cae9991ba",
+      "score": 49,
+      "features": [
+        "if",
+        "return",
+        "conditional",
+        "logical"
+      ],
+      "preview": "function _unsupportedIterableToArray(o, minLen) {\n  if (!o) return;\n  if (typeof o === \"string\") return _arrayLikeToArray(o, minLen);\n  var n = Object.prototype.toString.call(o).slice(8, -1);\n  if (n === \"Object\" && o.constructor) n = o.constructor.name;\n  if (n === \"Map\" || n === \"Set\") return Array.from(o);\n  if (n === \"Arguments\" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);\n}"
+    },
+    {
+      "id": "antd-window-3",
+      "rank": 3,
+      "artifact": "antd",
+      "start": 6580619,
+      "end": 6581035,
+      "sourceWindowBytes": 416,
+      "sourceSha256": "b06f8b8438dda00569407b613ff969cc08d48b36e269aceae679da1cae9991ba",
+      "score": 49,
+      "features": [
+        "if",
+        "return",
+        "conditional",
+        "logical"
+      ],
+      "preview": "function _unsupportedIterableToArray(o, minLen) {\n  if (!o) return;\n  if (typeof o === \"string\") return _arrayLikeToArray(o, minLen);\n  var n = Object.prototype.toString.call(o).slice(8, -1);\n  if (n === \"Object\" && o.constructor) n = o.constructor.name;\n  if (n === \"Map\" || n === \"Set\") return Array.from(o);\n  if (n === \"Arguments\" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);\n}"
+    },
+    {
+      "id": "antd-window-4",
+      "rank": 4,
+      "artifact": "antd",
+      "start": 6587249,
+      "end": 6587665,
+      "sourceWindowBytes": 416,
+      "sourceSha256": "b06f8b8438dda00569407b613ff969cc08d48b36e269aceae679da1cae9991ba",
+      "score": 49,
+      "features": [
+        "if",
+        "return",
+        "conditional",
+        "logical"
+      ],
+      "preview": "function _unsupportedIterableToArray(o, minLen) {\n  if (!o) return;\n  if (typeof o === \"string\") return _arrayLikeToArray(o, minLen);\n  var n = Object.prototype.toString.call(o).slice(8, -1);\n  if (n === \"Object\" && o.constructor) n = o.constructor.name;\n  if (n === \"Map\" || n === \"Set\") return Array.from(o);\n  if (n === \"Arguments\" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);\n}"
+    },
+    {
+      "id": "antd-window-5",
+      "rank": 5,
+      "artifact": "antd",
+      "start": 4392996,
+      "end": 4393542,
+      "sourceWindowBytes": 546,
+      "sourceSha256": "a2ea9ef29806b21bfbf1f8f6a2b9032e85b212821b6efd249200ca29c404a52c",
+      "score": 49,
+      "features": [
+        "if",
+        "return",
+        "conditional",
+        "logical"
+      ],
+      "preview": "function _unsupportedIterableToArray(o, minLen) {\n  if (!o) return;\n  if (typeof o === \"string\") return Object(_arrayLikeToArray_js__WEBPACK_IMPORTED_MODULE_0__[\"a\"])(o, minLen);\n  var n = Object.prototype.toString.call(o).slice(8, -1);\n  if (n === \"Object\" && o.constructor) n = o.constructor.name;\n  if (n === \"Map\" || n === \"Set\") return Array.from(o);\n  if (n === \"Arguments\" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return Object(_arrayLikeToArray_js__WEBPACK_IMPORTED_MODULE_0__[\"a\"])(o, minLen);\n}"
+    },
+    {
+      "id": "d3-window-1",
+      "rank": 1,
+      "artifact": "d3",
+      "start": 215033,
+      "end": 215673,
+      "sourceWindowBytes": 640,
+      "sourceSha256": "a3f22037dc5a1cf3f1b5ffe28705d4f5babfff8291849fb163c7d8180f1b7638",
+      "score": 68,
+      "features": [
+        "if",
+        "return",
+        "conditional",
+        "else",
+        "logical"
+      ],
+      "preview": "function autoType(object) {\n  for (var key in object) {\n    var value = object[key].trim(),\n      number,\n      m;\n    if (!value) value = null;else if (value === \"true\") value = true;else if (value === \"false\") value = false;else if (value === \"NaN\") value = NaN;else if (!isNaN(number = +value)) value = number;else if (m = value.match(/^([-+]\\d{2})?\\d{4}(-\\d{2}(-\\d{2})?)?(T\\d{2}:\\d{2}(:\\d{2}(\\.\\d{3})?)?(Z|[-+]\\d{2}:\\d{2})?)?$/)) {\n      if (fixtz && !!m[4] && !m[7]) value = value.replace(/-/g, \"/\").replace(/T/, \" \");\n      value = new Date(value);\n    } else continue;\n    object[key] = value;\n  }\n  return object;\n}"
+    },
+    {
+      "id": "d3-window-2",
+      "rank": 2,
+      "artifact": "d3",
+      "start": 200856,
+      "end": 201552,
+      "sourceWindowBytes": 696,
+      "sourceSha256": "06b9316ed8589a50ec113fc2fd294dadec1db30398d6f660610852875ef0f9ff",
+      "score": 68,
+      "features": [
+        "if",
+        "return",
+        "else",
+        "this"
+      ],
+      "preview": "_project(x0, y0, vx, vy) {\n  let t = Infinity,\n    c,\n    x,\n    y;\n  if (vy < 0) {\n    if (y0 <= this.ymin) return null;\n    if ((c = (this.ymin - y0) / vy) < t) y = this.ymin, x = x0 + (t = c) * vx;\n  } else if (vy > 0) {\n    if (y0 >= this.ymax) return null;\n    if ((c = (this.ymax - y0) / vy) < t) y = this.ymax, x = x0 + (t = c) * vx;\n  }\n  if (vx > 0) {\n    if (x0 >= this.xmax) return null;\n    if ((c = (this.xmax - x0) / vx) < t) x = this.xmax, y = y0 + (t = c) * vy;\n  } else if (vx < 0) {\n    if (x0 <= this.xmin) return null;\n    if ((c = (this.xmin - x0) / vx) < t) x = this.xmin, y = y0 + (t = c) * vy;\n  }\n  return [x, y];\n}"
+    },
+    {
+      "id": "d3-window-3",
+      "rank": 3,
+      "artifact": "d3",
+      "start": 75011,
+      "end": 75689,
+      "sourceWindowBytes": 678,
+      "sourceSha256": "fbe85173b78216b63f5605d6652c6bf5a01c83c6038ea5731736159c8e7aa61c",
+      "score": 56,
+      "features": [
+        "if",
+        "return",
+        "conditional",
+        "else",
+        "logical"
+      ],
+      "preview": "function hslConvert(o) {\n  if (o instanceof Hsl) return new Hsl(o.h, o.s, o.l, o.opacity);\n  if (!(o instanceof Color)) o = color(o);\n  if (!o) return new Hsl();\n  if (o instanceof Hsl) return o;\n  o = o.rgb();\n  var r = o.r / 255,\n    g = o.g / 255,\n    b = o.b / 255,\n    min = Math.min(r, g, b),\n    max = Math.max(r, g, b),\n    h = NaN,\n    s = max - min,\n    l = (max + min) / 2;\n  if (s) {\n    if (r === max) h = (g - b) / s + (g < b) * 6;else if (g === max) h = (b - r) / s + 2;else h = (r - g) / s + 4;\n    s /= l < 0.5 ? max + min : 2 - max - min;\n    h *= 60;\n  } else {\n    s = l > 0 && l < 1 ? 0 : h;\n  }\n  return new Hsl(h, s, l, o.opacity);\n}"
+    },
+    {
+      "id": "d3-window-4",
+      "rank": 4,
+      "artifact": "d3",
+      "start": 99173,
+      "end": 99678,
+      "sourceWindowBytes": 505,
+      "sourceSha256": "f78f455a8fefbc81ba689b36301f9ecbdbb1913fbfd58bfb43c5ecaeebbaea4b",
+      "score": 41,
+      "features": [
+        "if",
+        "return",
+        "else"
+      ],
+      "preview": "function sleep(time) {\n  if (frame) return;\n  if (timeout) timeout = clearTimeout(timeout);\n  var delay = time - clockNow;\n  if (delay > 24) {\n    if (time < Infinity) timeout = setTimeout(wake, time - clock.now() - clockSkew);\n    if (interval) interval = clearInterval(interval);\n  } else {\n    if (!interval) clockLast = clock.now(), interval = setInterval(poke, pokeDelay);\n    frame = 1, setFrame(wake);\n  }\n}"
+    },
+    {
+      "id": "d3-window-5",
+      "rank": 5,
+      "artifact": "d3",
+      "start": 402490,
+      "end": 402996,
+      "sourceWindowBytes": 506,
+      "sourceSha256": "bbf77e11fbf1d1d77b2b7e25a3c1b3a44146d6779788e5e884bef63a41c56a0c",
+      "score": 41,
+      "features": [
+        "if",
+        "return",
+        "conditional"
+      ],
+      "preview": "function (count, specifier) {\n  if (specifier == null) specifier = base === 10 ? \".0e\" : \",\";\n  if (typeof specifier !== \"function\") specifier = exports.format(specifier);\n  if (count === Infinity) return specifier;\n  if (count == null) count = 10;\n  var k = Math.max(1, base * count / scale.ticks().length);\n  return function (d) {\n    var i = d / pows(Math.round(logs(d)));\n    if (i * base < base - 0.5) i *= base;\n    return i <= k ? specifier(d) : \"\";\n  };\n}"
+    },
+    {
+      "id": "echarts-window-1",
+      "rank": 1,
+      "artifact": "echarts",
+      "start": 84963,
+      "end": 85352,
+      "sourceWindowBytes": 389,
+      "sourceSha256": "4e51887265dd89ea3dce67aeb3b6204b1f8d03f01227ee44eae621615bcad8ec",
+      "score": 39,
+      "features": [
+        "if",
+        "return",
+        "else"
+      ],
+      "preview": "function cssHueToRgb(m1, m2, h) {\n  if (h < 0) {\n    h += 1;\n  } else if (h > 1) {\n    h -= 1;\n  }\n  if (h * 6 < 1) {\n    return m1 + (m2 - m1) * h * 6;\n  }\n  if (h * 2 < 1) {\n    return m2;\n  }\n  if (h * 3 < 2) {\n    return m1 + (m2 - m1) * (2 / 3 - h) * 6;\n  }\n  return m1;\n}"
+    },
+    {
+      "id": "echarts-window-2",
+      "rank": 2,
+      "artifact": "echarts",
+      "start": 377309,
+      "end": 377754,
+      "sourceWindowBytes": 445,
+      "sourceSha256": "314cd02af988a05685e4a02e3ef4a496744b2f248ee67c19a761e5caf6dda6d1",
+      "score": 39,
+      "features": [
+        "if",
+        "return",
+        "conditional",
+        "logical"
+      ],
+      "preview": "function windingLine(x0, y0, x1, y1, x, y) {\n  if (y > y0 && y > y1 || y < y0 && y < y1) {\n    return 0;\n  }\n  if (y1 === y0) {\n    return 0;\n  }\n  var t = (y - y0) / (y1 - y0);\n  var dir = y1 < y0 ? 1 : -1;\n  if (t === 1 || t === 0) {\n    dir = y1 < y0 ? 0.5 : -0.5;\n  }\n  var x_ = t * (x1 - x0) + x0;\n  return x_ === x ? Infinity : x_ > x ? dir : 0;\n}"
+    },
+    {
+      "id": "echarts-window-3",
+      "rank": 3,
+      "artifact": "echarts",
+      "start": 14368,
+      "end": 14905,
+      "sourceWindowBytes": 537,
+      "sourceSha256": "3dd2f73362fb8862b9e9f7b9768d0847cae91ebe62255cfa191e287cfb23781f",
+      "score": 37,
+      "features": [
+        "if",
+        "return",
+        "else",
+        "logical"
+      ],
+      "preview": "function filter(arr, cb, context) {\n  if (!arr) {\n    return [];\n  }\n  if (!cb) {\n    return slice(arr);\n  }\n  if (arr.filter && arr.filter === nativeFilter) {\n    return arr.filter(cb, context);\n  } else {\n    var result = [];\n    for (var i = 0, len = arr.length; i < len; i++) {\n      if (cb.call(context, arr[i], i, arr)) {\n        result.push(arr[i]);\n      }\n    }\n    return result;\n  }\n}"
+    },
+    {
+      "id": "echarts-window-4",
+      "rank": 4,
+      "artifact": "echarts",
+      "start": 275905,
+      "end": 276480,
+      "sourceWindowBytes": 575,
+      "sourceSha256": "4cd99e39d200c82a986bebc6bd05532ceb9c4688cd381e36f9890aeb538cd317",
+      "score": 37,
+      "features": [
+        "if",
+        "return",
+        "conditional",
+        "else"
+      ],
+      "preview": "function queryDataIndex(data, payload) {\n  if (payload.dataIndexInside != null) {\n    return payload.dataIndexInside;\n  } else if (payload.dataIndex != null) {\n    return isArray(payload.dataIndex) ? map(payload.dataIndex, function (value) {\n      return data.indexOfRawIndex(value);\n    }) : data.indexOfRawIndex(payload.dataIndex);\n  } else if (payload.name != null) {\n    return isArray(payload.name) ? map(payload.name, function (value) {\n      return data.indexOfName(value);\n    }) : data.indexOfName(payload.name);\n  }\n}"
+    },
+    {
+      "id": "echarts-window-5",
+      "rank": 5,
+      "artifact": "echarts",
+      "start": 392290,
+      "end": 392938,
+      "sourceWindowBytes": 648,
+      "sourceSha256": "43005429fa2b4a5bc9be86d0e424327194432433ad4fe290886bc8f2f4dd74d9",
+      "score": 37,
+      "features": [
+        "if",
+        "return",
+        "else",
+        "this"
+      ],
+      "preview": "function () {\n  var pathFill = this.style.fill;\n  if (pathFill !== 'none') {\n    if (isString(pathFill)) {\n      var fillLum = lum(pathFill, 0);\n      if (fillLum > 0.5) {\n        return DARK_LABEL_COLOR;\n      } else if (fillLum > 0.2) {\n        return LIGHTER_LABEL_COLOR;\n      }\n      return LIGHT_LABEL_COLOR;\n    } else if (pathFill) {\n      return LIGHT_LABEL_COLOR;\n    }\n  }\n  return DARK_LABEL_COLOR;\n}"
+    },
+    {
+      "id": "jquery-window-1",
+      "rank": 1,
+      "artifact": "jquery",
+      "start": 118493,
+      "end": 118846,
+      "sourceWindowBytes": 353,
+      "sourceSha256": "3ec56557226a4f8b7d4a1d8585ba7f4c7711d7980ac82c9a6a66dc71103c3c9a",
+      "score": 48,
+      "features": [
+        "if",
+        "return"
+      ],
+      "preview": "function getData(data) {\n  if (data === \"true\") {\n    return true;\n  }\n  if (data === \"false\") {\n    return false;\n  }\n  if (data === \"null\") {\n    return null;\n  }\n  if (data === +data + \"\") {\n    return +data;\n  }\n  if (rbrace.test(data)) {\n    return JSON.parse(data);\n  }\n  return data;\n}"
+    },
+    {
+      "id": "jquery-window-2",
+      "rank": 2,
+      "artifact": "jquery",
+      "start": 156134,
+      "end": 156666,
+      "sourceWindowBytes": 532,
+      "sourceSha256": "e26318aa249a15efaf64709c7a155b32408262bb768bff349059c5ecf41334b0",
+      "score": 48,
+      "features": [
+        "if",
+        "return",
+        "conditional",
+        "logical"
+      ],
+      "preview": "function (event) {\n  var button = event.button;\n  if (event.which == null && rkeyEvent.test(event.type)) {\n    return event.charCode != null ? event.charCode : event.keyCode;\n  }\n  if (!event.which && button !== undefined && rmouseEvent.test(event.type)) {\n    if (button & 1) {\n      return 1;\n    }\n    if (button & 2) {\n      return 3;\n    }\n    if (button & 4) {\n      return 2;\n    }\n    return 0;\n  }\n  return event.which;\n}"
+    },
+    {
+      "id": "jquery-window-3",
+      "rank": 3,
+      "artifact": "jquery",
+      "start": 216841,
+      "end": 217540,
+      "sourceWindowBytes": 699,
+      "sourceSha256": "ae211218ca9d0bec1ed778dd5e2ab98f7db8f509ef72678c44acf27c42f5d540",
+      "score": 45,
+      "features": [
+        "if",
+        "return",
+        "logical"
+      ],
+      "preview": "function (elem, name, value) {\n  var ret,\n    hooks,\n    nType = elem.nodeType;\n  if (nType === 3 || nType === 8 || nType === 2) {\n    return;\n  }\n  if (nType !== 1 || !jQuery.isXMLDoc(elem)) {\n    name = jQuery.propFix[name] || name;\n    hooks = jQuery.propHooks[name];\n  }\n  if (value !== undefined) {\n    if (hooks && \"set\" in hooks && (ret = hooks.set(elem, value, name)) !== undefined) {\n      return ret;\n    }\n    return elem[name] = value;\n  }\n  if (hooks && \"get\" in hooks && (ret = hooks.get(elem, name)) !== null) {\n    return ret;\n  }\n  return elem[name];\n}"
+    },
+    {
+      "id": "jquery-window-4",
+      "rank": 4,
+      "artifact": "jquery",
+      "start": 25003,
+      "end": 25379,
+      "sourceWindowBytes": 376,
+      "sourceSha256": "ab2f113dd6357bf607f5ba16288e00662af8b43bf40a92225e68da2a89a96bb5",
+      "score": 41,
+      "features": [
+        "if",
+        "return",
+        "conditional",
+        "logical"
+      ],
+      "preview": "function siblingCheck(a, b) {\n  var cur = b && a,\n    diff = cur && a.nodeType === 1 && b.nodeType === 1 && a.sourceIndex - b.sourceIndex;\n  if (diff) {\n    return diff;\n  }\n  if (cur) {\n    while (cur = cur.nextSibling) {\n      if (cur === b) {\n        return -1;\n      }\n    }\n  }\n  return a ? 1 : -1;\n}"
+    },
+    {
+      "id": "jquery-window-5",
+      "rank": 5,
+      "artifact": "jquery",
+      "start": 280028,
+      "end": 280467,
+      "sourceWindowBytes": 439,
+      "sourceSha256": "b55714dd82e0085073b6c0bca463c4cb37f76db827e711cc0399c7b41f779f12",
+      "score": 33,
+      "features": [
+        "if",
+        "return",
+        "conditional",
+        "else"
+      ],
+      "preview": "function (elem, method, val) {\n  var win;\n  if (isWindow(elem)) {\n    win = elem;\n  } else if (elem.nodeType === 9) {\n    win = elem.defaultView;\n  }\n  if (val === undefined) {\n    return win ? win[prop] : elem[method];\n  }\n  if (win) {\n    win.scrollTo(!top ? val : win.pageXOffset, top ? val : win.pageYOffset);\n  } else {\n    elem[method] = val;\n  }\n}"
+    },
+    {
+      "id": "lodash-window-1",
+      "rank": 1,
+      "artifact": "lodash",
+      "start": 375161,
+      "end": 375819,
+      "sourceWindowBytes": 658,
+      "sourceSha256": "b5d3a5ebe267b40e012b26919ef09b059f3dfa8569a6ea70848752dba761745b",
+      "score": 49,
+      "features": [
+        "if",
+        "return",
+        "logical"
+      ],
+      "preview": "function isEmpty(value) {\n  if (value == null) {\n    return true;\n  }\n  if (isArrayLike(value) && (isArray(value) || typeof value == 'string' || typeof value.splice == 'function' || isBuffer(value) || isTypedArray(value) || isArguments(value))) {\n    return !value.length;\n  }\n  var tag = getTag(value);\n  if (tag == mapTag || tag == setTag) {\n    return !value.size;\n  }\n  if (isPrototype(value)) {\n    return !baseKeys(value).length;\n  }\n  for (var key in value) {\n    if (hasOwnProperty.call(value, key)) {\n      return false;\n    }\n  }\n  return true;\n}"
+    },
+    {
+      "id": "lodash-window-2",
+      "rank": 2,
+      "artifact": "lodash",
+      "start": 401451,
+      "end": 402107,
+      "sourceWindowBytes": 656,
+      "sourceSha256": "07f563c3d858e723cf85cac4376561b196dd883d26d5492b1267fea9a04b16a1",
+      "score": 44,
+      "features": [
+        "if",
+        "return",
+        "conditional",
+        "logical"
+      ],
+      "preview": "function toNumber(value) {\n  if (typeof value == 'number') {\n    return value;\n  }\n  if (isSymbol(value)) {\n    return NAN;\n  }\n  if (isObject(value)) {\n    var other = typeof value.valueOf == 'function' ? value.valueOf() : value;\n    value = isObject(other) ? other + '' : other;\n  }\n  if (typeof value != 'string') {\n    return value === 0 ? value : +value;\n  }\n  value = baseTrim(value);\n  var isBinary = reIsBinary.test(value);\n  return isBinary || reIsOctal.test(value) ? freeParseInt(value.slice(2), isBinary ? 2 : 8) : reIsBadHex.test(value) ? NAN : +value;\n}"
+    },
+    {
+      "id": "lodash-window-3",
+      "rank": 3,
+      "artifact": "lodash",
+      "start": 398136,
+      "end": 398580,
+      "sourceWindowBytes": 444,
+      "sourceSha256": "d2bb391c1d2e3a12f976178385a64ae609937a016a2ac0eed8cdb79a730bd74e",
+      "score": 35,
+      "features": [
+        "if",
+        "return",
+        "conditional",
+        "logical"
+      ],
+      "preview": "function toArray(value) {\n  if (!value) {\n    return [];\n  }\n  if (isArrayLike(value)) {\n    return isString(value) ? stringToArray(value) : copyArray(value);\n  }\n  if (symIterator && value[symIterator]) {\n    return iteratorToArray(value[symIterator]());\n  }\n  var tag = getTag(value),\n    func = tag == mapTag ? mapToArray : tag == setTag ? setToArray : values;\n  return func(value);\n}"
+    },
+    {
+      "id": "lodash-window-4",
+      "rank": 4,
+      "artifact": "lodash",
+      "start": 173308,
+      "end": 173982,
+      "sourceWindowBytes": 674,
+      "sourceSha256": "845636ed67c64509e4698ff3aa1af7066824c8f232b8c90f301a206693f17c4a",
+      "score": 35,
+      "features": [
+        "if",
+        "return",
+        "else",
+        "logical"
+      ],
+      "preview": "function (value, other) {\n  var result;\n  if (value === undefined && other === undefined) {\n    return defaultValue;\n  }\n  if (value !== undefined) {\n    result = value;\n  }\n  if (other !== undefined) {\n    if (result === undefined) {\n      return other;\n    }\n    if (typeof value == 'string' || typeof other == 'string') {\n      value = baseToString(value);\n      other = baseToString(other);\n    } else {\n      value = baseToNumber(value);\n      other = baseToNumber(other);\n    }\n    result = operator(value, other);\n  }\n  return result;\n}"
+    },
+    {
+      "id": "lodash-window-5",
+      "rank": 5,
+      "artifact": "lodash",
+      "start": 465863,
+      "end": 466551,
+      "sourceWindowBytes": 688,
+      "sourceSha256": "e27e3a687dbd3899de8a1bbfeb4961a9964a3e961b9d70f7396d25b80eafa2cb",
+      "score": 34,
+      "features": [
+        "if",
+        "return",
+        "conditional",
+        "logical"
+      ],
+      "preview": "function split(string, separator, limit) {\n  if (limit && typeof limit != 'number' && isIterateeCall(string, separator, limit)) {\n    separator = limit = undefined;\n  }\n  limit = limit === undefined ? MAX_ARRAY_LENGTH : limit >>> 0;\n  if (!limit) {\n    return [];\n  }\n  string = toString(string);\n  if (string && (typeof separator == 'string' || separator != null && !isRegExp(separator))) {\n    separator = baseToString(separator);\n    if (!separator && hasUnicode(string)) {\n      return castSlice(stringToArray(string), 0, limit);\n    }\n  }\n  return string.split(separator, limit);\n}"
+    },
+    {
+      "id": "moment-window-1",
+      "rank": 1,
+      "artifact": "moment",
+      "start": 68446,
+      "end": 68917,
+      "sourceWindowBytes": 471,
+      "sourceSha256": "b01508b32d2d2ad02a714ba590a5a9a6cf30112321a79e7351065acc75f3ab15",
+      "score": 34,
+      "features": [
+        "if",
+        "return",
+        "else",
+        "logical"
+      ],
+      "preview": "function getLocale(key) {\n  var locale;\n  if (key && key._locale && key._locale._abbr) {\n    key = key._locale._abbr;\n  }\n  if (!key) {\n    return globalLocale;\n  }\n  if (!isArray(key)) {\n    locale = loadLocale(key);\n    if (locale) {\n      return locale;\n    }\n    key = [key];\n  }\n  return chooseLocale(key);\n}"
+    },
+    {
+      "id": "moment-window-2",
+      "rank": 2,
+      "artifact": "moment",
+      "start": 88030,
+      "end": 88690,
+      "sourceWindowBytes": 660,
+      "sourceSha256": "ced7b462b5842648b01e73c5b67e2a4c4a3f78551d8b8f96b38bceadf2e4d626",
+      "score": 33,
+      "features": [
+        "if",
+        "return",
+        "else",
+        "logical",
+        "this"
+      ],
+      "preview": "function meridiemFixWrap(locale, hour, meridiem) {\n  var isPm;\n  if (meridiem == null) {\n    return hour;\n  }\n  if (locale.meridiemHour != null) {\n    return locale.meridiemHour(hour, meridiem);\n  } else if (locale.isPM != null) {\n    isPm = locale.isPM(meridiem);\n    if (isPm && hour < 12) {\n      hour += 12;\n    }\n    if (!isPm && hour === 12) {\n      hour = 0;\n    }\n    return hour;\n  } else {\n    return hour;\n  }\n}"
+    },
+    {
+      "id": "moment-window-3",
+      "rank": 3,
+      "artifact": "moment",
+      "start": 32026,
+      "end": 32713,
+      "sourceWindowBytes": 687,
+      "sourceSha256": "cb2401619ba54629b6ace80065702be71230e571ed2d3b01bca5e05cb78c5137",
+      "score": 33,
+      "features": [
+        "if",
+        "return",
+        "conditional",
+        "else"
+      ],
+      "preview": "function setMonth(mom, value) {\n  var dayOfMonth;\n  if (!mom.isValid()) {\n    return mom;\n  }\n  if (typeof value === 'string') {\n    if (/^\\d+$/.test(value)) {\n      value = toInt(value);\n    } else {\n      value = mom.localeData().monthsParse(value);\n      if (!isNumber(value)) {\n        return mom;\n      }\n    }\n  }\n  dayOfMonth = Math.min(mom.date(), daysInMonth(mom.year(), value));\n  mom._d['set' + (mom._isUTC ? 'UTC' : '') + 'Month'](value, dayOfMonth);\n  return mom;\n}"
+    },
+    {
+      "id": "moment-window-4",
+      "rank": 4,
+      "artifact": "moment",
+      "start": 33731,
+      "end": 34358,
+      "sourceWindowBytes": 627,
+      "sourceSha256": "41b7ae056ff412b7b48990c444e4d1d0e7d87cf323e7b33d46afcc9f1f0462f7",
+      "score": 28,
+      "features": [
+        "if",
+        "return",
+        "conditional",
+        "else",
+        "logical",
+        "this"
+      ],
+      "preview": "function monthsRegex(isStrict) {\n  if (this._monthsParseExact) {\n    if (!hasOwnProp(this, '_monthsRegex')) {\n      computeMonthsParse.call(this);\n    }\n    if (isStrict) {\n      return this._monthsStrictRegex;\n    } else {\n      return this._monthsRegex;\n    }\n  } else {\n    if (!hasOwnProp(this, '_monthsRegex')) {\n      this._monthsRegex = defaultMonthsRegex;\n    }\n    return this._monthsStrictRegex && isStrict ? this._monthsStrictRegex : this._monthsRegex;\n  }\n}"
+    },
+    {
+      "id": "moment-window-5",
+      "rank": 5,
+      "artifact": "moment",
+      "start": 43989,
+      "end": 44335,
+      "sourceWindowBytes": 346,
+      "sourceSha256": "460ef2149a003b4f291e714c77612c0e695810ec799ae928323cd25a184d1fb5",
+      "score": 27,
+      "features": [
+        "if",
+        "return"
+      ],
+      "preview": "function parseWeekday(input, locale) {\n  if (typeof input !== 'string') {\n    return input;\n  }\n  if (!isNaN(input)) {\n    return parseInt(input, 10);\n  }\n  input = locale.weekdaysParse(input);\n  if (typeof input === 'number') {\n    return input;\n  }\n  return null;\n}"
+    },
+    {
+      "id": "react-window-1",
+      "rank": 1,
+      "artifact": "react",
+      "start": 2698,
+      "end": 3046,
+      "sourceWindowBytes": 348,
+      "sourceSha256": "446c2e6c31ffb8e9c34156a6e9b89cb49859d68b07ecdf3bb2d223452926dd4a",
+      "score": 23,
+      "features": [
+        "if",
+        "return",
+        "logical"
+      ],
+      "preview": "function getIteratorFn(maybeIterable) {\n  if (maybeIterable === null || typeof maybeIterable !== 'object') {\n    return null;\n  }\n  var maybeIterator = MAYBE_ITERATOR_SYMBOL && maybeIterable[MAYBE_ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL];\n  if (typeof maybeIterator === 'function') {\n    return maybeIterator;\n  }\n  return null;\n}"
+    },
+    {
+      "id": "react-window-2",
+      "rank": 2,
+      "artifact": "react",
+      "start": 16711,
+      "end": 16986,
+      "sourceWindowBytes": 275,
+      "sourceSha256": "302979d7145d1dc6d946bd73f2a8d53680673fc738e6b14b0a5aebb87761b208",
+      "score": 18,
+      "features": [
+        "if",
+        "return",
+        "logical"
+      ],
+      "preview": "function hasValidRef(config) {\n  {\n    if (hasOwnProperty.call(config, 'ref')) {\n      var getter = Object.getOwnPropertyDescriptor(config, 'ref').get;\n      if (getter && getter.isReactWarning) {\n        return false;\n      }\n    }\n  }\n  return config.ref !== undefined;\n}"
+    },
+    {
+      "id": "react-window-3",
+      "rank": 3,
+      "artifact": "react",
+      "start": 16988,
+      "end": 17263,
+      "sourceWindowBytes": 275,
+      "sourceSha256": "ae5edfded0838fb1e78ac9286e8b40f9d4110a3124ba13f27a04ce6846bc8058",
+      "score": 18,
+      "features": [
+        "if",
+        "return",
+        "logical"
+      ],
+      "preview": "function hasValidKey(config) {\n  {\n    if (hasOwnProperty.call(config, 'key')) {\n      var getter = Object.getOwnPropertyDescriptor(config, 'key').get;\n      if (getter && getter.isReactWarning) {\n        return false;\n      }\n    }\n  }\n  return config.key !== undefined;\n}"
+    },
+    {
+      "id": "react-window-4",
+      "rank": 4,
+      "artifact": "react",
+      "start": 61836,
+      "end": 62188,
+      "sourceWindowBytes": 352,
+      "sourceSha256": "27cb6339bdae7e2bc223a8f4b7d8f41db242758c6bb851c72796f5ba7fbd4005",
+      "score": 18,
+      "features": [
+        "if",
+        "return",
+        "conditional",
+        "logical"
+      ],
+      "preview": "function getCurrentComponentErrorInfo(parentType) {\n  var info = getDeclarationErrorAddendum();\n  if (!info) {\n    var parentName = typeof parentType === 'string' ? parentType : parentType.displayName || parentType.name;\n    if (parentName) {\n      info = \"\\n\\nCheck the top-level render call using <\" + parentName + \">.\";\n    }\n  }\n  return info;\n}"
+    },
+    {
+      "id": "react-window-5",
+      "rank": 5,
+      "artifact": "react",
+      "start": 60905,
+      "end": 61151,
+      "sourceWindowBytes": 246,
+      "sourceSha256": "4f6b205cf895d899fb04a8a75fb0fa8a5e5b6cc21a395668e27e9d97bcdaa257",
+      "score": 17,
+      "features": [
+        "if",
+        "return"
+      ],
+      "preview": "function getDeclarationErrorAddendum() {\n  if (ReactCurrentOwner.current) {\n    var name = getComponentName(ReactCurrentOwner.current.type);\n    if (name) {\n      return '\\n\\nCheck the render method of `' + name + '`.';\n    }\n  }\n  return '';\n}"
+    },
+    {
+      "id": "terser-window-1",
+      "rank": 1,
+      "artifact": "terser",
+      "start": 29559,
+      "end": 30177,
+      "sourceWindowBytes": 618,
+      "sourceSha256": "ff30823e1a5cf39d684c0c46d89b6c7c02787ab1a5386582fe5f7b31218c74a9",
+      "score": 68,
+      "features": [
+        "if",
+        "return",
+        "else",
+        "logical"
+      ],
+      "preview": "function parse_js_number(num, allow_e = true) {\n  if (!allow_e && num.includes(\"e\")) {\n    return NaN;\n  }\n  if (RE_HEX_NUMBER.test(num)) {\n    return parseInt(num.substr(2), 16);\n  } else if (RE_OCT_NUMBER.test(num)) {\n    return parseInt(num.substr(1), 8);\n  } else if (RE_ES6_OCT_NUMBER.test(num)) {\n    return parseInt(num.substr(2), 8);\n  } else if (RE_BIN_NUMBER.test(num)) {\n    return parseInt(num.substr(2), 2);\n  } else if (RE_DEC_NUMBER.test(num)) {\n    return parseFloat(num);\n  } else {\n    var val = parseFloat(num);\n    if (val == num) return val;\n  }\n}"
+    },
+    {
+      "id": "terser-window-2",
+      "rank": 2,
+      "artifact": "terser",
+      "start": 554307,
+      "end": 554898,
+      "sourceWindowBytes": 591,
+      "sourceSha256": "4a1671b0056ec95dd17dd97407d0dcac20d88ec6fd7a382887d26acd77d38595",
+      "score": 64,
+      "features": [
+        "if",
+        "return"
+      ],
+      "preview": "function is_lhs_read_only(lhs) {\n  if (lhs instanceof AST_This) return true;\n  if (lhs instanceof AST_SymbolRef) return lhs.definition().orig[0] instanceof AST_SymbolLambda;\n  if (lhs instanceof AST_PropAccess) {\n    lhs = lhs.expression;\n    if (lhs instanceof AST_SymbolRef) {\n      if (lhs.is_immutable()) return false;\n      lhs = lhs.fixed_value();\n    }\n    if (!lhs) return true;\n    if (lhs instanceof AST_RegExp) return false;\n    if (lhs instanceof AST_Constant) return true;\n    return is_lhs_read_only(lhs);\n  }\n  return false;\n}"
+    },
+    {
+      "id": "terser-window-3",
+      "rank": 3,
+      "artifact": "terser",
+      "start": 759833,
+      "end": 760391,
+      "sourceWindowBytes": 558,
+      "sourceSha256": "fab295259d50ca3707aa5d850a8139862b19ed0c9440d9ab53a47c70fc197191",
+      "score": 44,
+      "features": [
+        "if",
+        "return"
+      ],
+      "preview": "function single_arg_diff() {\n  var a = consequent.args;\n  var b = alternative.args;\n  for (var i = 0, len = a.length; i < len; i++) {\n    if (a[i] instanceof AST_Expansion) return;\n    if (!a[i].equivalent_to(b[i])) {\n      if (b[i] instanceof AST_Expansion) return;\n      for (var j = i + 1; j < len; j++) {\n        if (a[j] instanceof AST_Expansion) return;\n        if (!a[j].equivalent_to(b[j])) return;\n      }\n      return i;\n    }\n  }\n}"
+    },
+    {
+      "id": "terser-window-4",
+      "rank": 4,
+      "artifact": "terser",
+      "start": 689931,
+      "end": 690566,
+      "sourceWindowBytes": 635,
+      "sourceSha256": "ab153eeee317092da77abb6139e31d24dc8951173ab3df64c5d953d2599cd808",
+      "score": 44,
+      "features": [
+        "if",
+        "return",
+        "logical"
+      ],
+      "preview": "function has_nested_break(root) {\n  let has_break = false;\n  let tw = new TreeWalker(node => {\n    if (has_break) return true;\n    if (node instanceof AST_Lambda) return true;\n    if (node instanceof AST_SimpleStatement) return true;\n    if (!is_break(node, tw)) return;\n    let parent = tw.parent();\n    if (parent instanceof AST_SwitchBranch && parent.body[parent.body.length - 1] === node) {\n      return;\n    }\n    has_break = true;\n  });\n  root.walk(tw);\n  return has_break;\n}"
+    },
+    {
+      "id": "terser-window-5",
+      "rank": 5,
+      "artifact": "terser",
+      "start": 974843,
+      "end": 975149,
+      "sourceWindowBytes": 306,
+      "sourceSha256": "d560c88d933aa1e7d8c45ee563c34a9016e32318e1d2afd72d02910ffbe6285e",
+      "score": 41,
+      "features": [
+        "if",
+        "return",
+        "conditional"
+      ],
+      "preview": "function can_mangle(name) {\n  if (unmangleable.has(name)) return false;\n  if (reserved.has(name)) return false;\n  if (options.only_cache) {\n    return cache.has(name);\n  }\n  if (/^-?[0-9]+(\\.[0-9]+)?(e[+-][0-9]+)?$/.test(name)) return false;\n  return true;\n}"
+    },
+    {
+      "id": "three-window-1",
+      "rank": 1,
+      "artifact": "three",
+      "start": 492680,
+      "end": 493139,
+      "sourceWindowBytes": 459,
+      "sourceSha256": "dfb20c0035d01f56afa398444861fc58e9312b059aa3677dd20afa3bcc35fe35",
+      "score": 53,
+      "features": [
+        "if",
+        "return",
+        "else"
+      ],
+      "preview": "function painterSortStable(a, b) {\n  if (a.groupOrder !== b.groupOrder) {\n    return a.groupOrder - b.groupOrder;\n  } else if (a.renderOrder !== b.renderOrder) {\n    return a.renderOrder - b.renderOrder;\n  } else if (a.program !== b.program) {\n    return a.program.id - b.program.id;\n  } else if (a.material.id !== b.material.id) {\n    return a.material.id - b.material.id;\n  } else if (a.z !== b.z) {\n    return a.z - b.z;\n  } else {\n    return a.id - b.id;\n  }\n}"
+    },
+    {
+      "id": "three-window-2",
+      "rank": 2,
+      "artifact": "three",
+      "start": 766205,
+      "end": 766885,
+      "sourceWindowBytes": 680,
+      "sourceSha256": "6afe152f1008a4d7fde1a27384841e682e682ab902531ad7498d4f15ed7bbb66",
+      "score": 49,
+      "features": [
+        "if",
+        "return",
+        "logical"
+      ],
+      "preview": "function intersects(p1, q1, p2, q2) {\n  var o1 = sign(area(p1, q1, p2));\n  var o2 = sign(area(p1, q1, q2));\n  var o3 = sign(area(p2, q2, p1));\n  var o4 = sign(area(p2, q2, q1));\n  if (o1 !== o2 && o3 !== o4) return true;\n  if (o1 === 0 && onSegment(p1, p2, q1)) return true;\n  if (o2 === 0 && onSegment(p1, q2, q1)) return true;\n  if (o3 === 0 && onSegment(p2, p1, q2)) return true;\n  if (o4 === 0 && onSegment(p2, q1, q2)) return true;\n  return false;\n}"
+    },
+    {
+      "id": "three-window-3",
+      "rank": 3,
+      "artifact": "three",
+      "start": 410461,
+      "end": 411126,
+      "sourceWindowBytes": 665,
+      "sourceSha256": "a34f0a0bf38d305bb0e5034d76d02b44d6f9267a109643c6297d6280435b299d",
+      "score": 46,
+      "features": [
+        "if",
+        "return"
+      ],
+      "preview": "function needsUpdate(geometry, index) {\n  var cachedAttributes = currentState.attributes;\n  var geometryAttributes = geometry.attributes;\n  var attributesNum = 0;\n  for (var key in geometryAttributes) {\n    var cachedAttribute = cachedAttributes[key];\n    var geometryAttribute = geometryAttributes[key];\n    if (cachedAttribute === undefined) return true;\n    if (cachedAttribute.attribute !== geometryAttribute) return true;\n    if (cachedAttribute.data !== geometryAttribute.data) return true;\n    attributesNum++;\n  }\n  if (currentState.attributesNum !== attributesNum) return true;\n  if (currentState.index !== index) return true;\n  return false;\n}"
+    },
+    {
+      "id": "three-window-4",
+      "rank": 4,
+      "artifact": "three",
+      "start": 164267,
+      "end": 164478,
+      "sourceWindowBytes": 211,
+      "sourceSha256": "41831c5c8d05ba26b3a3000c3e57f5b0fd5536890c7435ba428649f90e3ab272",
+      "score": 41,
+      "features": [
+        "if",
+        "return"
+      ],
+      "preview": "function hue2rgb(p, q, t) {\n  if (t < 0) t += 1;\n  if (t > 1) t -= 1;\n  if (t < 1 / 6) return p + (q - p) * 6 * t;\n  if (t < 1 / 2) return q;\n  if (t < 2 / 3) return p + (q - p) * 6 * (2 / 3 - t);\n  return p;\n}"
+    },
+    {
+      "id": "three-window-5",
+      "rank": 5,
+      "artifact": "three",
+      "start": 79489,
+      "end": 80062,
+      "sourceWindowBytes": 573,
+      "sourceSha256": "6184df3b5f7eb0cdc282bc0915f7895105c061079f2e2a166e7b3041b07e31c5",
+      "score": 35,
+      "features": [
+        "if",
+        "return",
+        "this"
+      ],
+      "preview": "function setFromArray(array) {\n  var minX = +Infinity;\n  var minY = +Infinity;\n  var minZ = +Infinity;\n  var maxX = -Infinity;\n  var maxY = -Infinity;\n  var maxZ = -Infinity;\n  for (var i = 0, l = array.length; i < l; i += 3) {\n    var x = array[i];\n    var y = array[i + 1];\n    var z = array[i + 2];\n    if (x < minX) minX = x;\n    if (y < minY) minY = y;\n    if (z < minZ) minZ = z;\n    if (x > maxX) maxX = x;\n    if (y > maxY) maxY = y;\n    if (z > maxZ) maxZ = z;\n  }\n  this.min.set(minX, minY, minZ);\n  this.max.set(maxX, maxY, maxZ);\n  return this;\n}"
+    },
+    {
+      "id": "victory-window-1",
+      "rank": 1,
+      "artifact": "victory",
+      "start": 1704068,
+      "end": 1704768,
+      "sourceWindowBytes": 700,
+      "sourceSha256": "87543739cfc28c596c3acfb1b18ab165cca8585c2be28e5e472bced3be603029",
+      "score": 60,
+      "features": [
+        "if",
+        "return",
+        "else"
+      ],
+      "preview": "function (values, valueof) {\n  let min;\n  let max;\n  if (valueof === undefined) {\n    for (const value of values) {\n      if (value != null) {\n        if (min === undefined) {\n          if (value >= value) min = max = value;\n        } else {\n          if (min > value) min = value;\n          if (max < value) max = value;\n        }\n      }\n    }\n  } else {\n    let index = -1;\n    for (let value of values) {\n      if ((value = valueof(value, ++index, values)) != null) {\n        if (min === undefined) {\n          if (value >= value) min = max = value;\n        } else {\n          if (min > value) min = value;\n          if (max < value) max = value;\n        }\n      }\n    }\n  }\n  return [min, max];\n}"
+    },
+    {
+      "id": "victory-window-2",
+      "rank": 2,
+      "artifact": "victory",
+      "start": 1819953,
+      "end": 1820425,
+      "sourceWindowBytes": 472,
+      "sourceSha256": "61145a6e7f19331f5c9d18577557d9367473a4de94c90d16b373791c5feda30c",
+      "score": 59,
+      "features": [
+        "if",
+        "return",
+        "conditional",
+        "else",
+        "logical"
+      ],
+      "preview": "function (degree, labelPlacement) {\n  if (labelPlacement === \"perpendicular\") {\n    return degree > 90 && degree < 270 ? \"bottom\" : \"top\";\n  } else if (labelPlacement === \"parallel\") {\n    return degree >= 0 && degree <= 180 ? \"right\" : \"left\";\n  }\n  if (degree < 45 || degree > 315) {\n    return \"top\";\n  } else if (degree >= 45 && degree < 135) {\n    return \"right\";\n  } else if (degree >= 135 && degree < 225) {\n    return \"bottom\";\n  } else {\n    return \"left\";\n  }\n}"
+    },
+    {
+      "id": "victory-window-3",
+      "rank": 3,
+      "artifact": "victory",
+      "start": 71400,
+      "end": 72078,
+      "sourceWindowBytes": 678,
+      "sourceSha256": "fbe85173b78216b63f5605d6652c6bf5a01c83c6038ea5731736159c8e7aa61c",
+      "score": 56,
+      "features": [
+        "if",
+        "return",
+        "conditional",
+        "else",
+        "logical"
+      ],
+      "preview": "function hslConvert(o) {\n  if (o instanceof Hsl) return new Hsl(o.h, o.s, o.l, o.opacity);\n  if (!(o instanceof Color)) o = color(o);\n  if (!o) return new Hsl();\n  if (o instanceof Hsl) return o;\n  o = o.rgb();\n  var r = o.r / 255,\n    g = o.g / 255,\n    b = o.b / 255,\n    min = Math.min(r, g, b),\n    max = Math.max(r, g, b),\n    h = NaN,\n    s = max - min,\n    l = (max + min) / 2;\n  if (s) {\n    if (r === max) h = (g - b) / s + (g < b) * 6;else if (g === max) h = (b - r) / s + 2;else h = (r - g) / s + 4;\n    s /= l < 0.5 ? max + min : 2 - max - min;\n    h *= 60;\n  } else {\n    s = l > 0 && l < 1 ? 0 : h;\n  }\n  return new Hsl(h, s, l, o.opacity);\n}"
+    },
+    {
+      "id": "victory-window-4",
+      "rank": 4,
+      "artifact": "victory",
+      "start": 692072,
+      "end": 692642,
+      "sourceWindowBytes": 570,
+      "sourceSha256": "579e139a7bc427464033060b8ba9c2c054767d96b185647468244da16ac04c0e",
+      "score": 52,
+      "features": [
+        "if",
+        "return",
+        "logical"
+      ],
+      "preview": "function isEmpty(value) {\n  if (value == null) {\n    return true;\n  }\n  if (isArrayLike(value) && (isArray(value) || typeof value == 'string' || typeof value.splice == 'function' || isBuffer(value) || isTypedArray(value) || isArguments(value))) {\n    return !value.length;\n  }\n  var tag = getTag(value);\n  if (tag == mapTag || tag == setTag) {\n    return !value.size;\n  }\n  if (isPrototype(value)) {\n    return !baseKeys(value).length;\n  }\n  for (var key in value) {\n    if (hasOwnProperty.call(value, key)) {\n      return false;\n    }\n  }\n  return true;\n}"
+    },
+    {
+      "id": "victory-window-5",
+      "rank": 5,
+      "artifact": "victory",
+      "start": 7529,
+      "end": 8162,
+      "sourceWindowBytes": 633,
+      "sourceSha256": "1911e763b1e0e12edfde5cd45dba4484054ef85a80d5221924890729f09523de",
+      "score": 49,
+      "features": [
+        "if",
+        "return",
+        "else"
+      ],
+      "preview": "function (compare) {\n  if (compare.length === 1) compare = ascendingComparator(compare);\n  return {\n    left: function (a, x, lo, hi) {\n      if (lo == null) lo = 0;\n      if (hi == null) hi = a.length;\n      while (lo < hi) {\n        var mid = lo + hi >>> 1;\n        if (compare(a[mid], x) < 0) lo = mid + 1;else hi = mid;\n      }\n      return lo;\n    },\n    right: function (a, x, lo, hi) {\n      if (lo == null) lo = 0;\n      if (hi == null) hi = a.length;\n      while (lo < hi) {\n        var mid = lo + hi >>> 1;\n        if (compare(a[mid], x) > 0) hi = mid;else lo = mid + 1;\n      }\n      return lo;\n    }\n  };\n}"
+    },
+    {
+      "id": "vue-window-1",
+      "rank": 1,
+      "artifact": "vue",
+      "start": 157134,
+      "end": 157807,
+      "sourceWindowBytes": 673,
+      "sourceSha256": "9cf1d19809b39ac343143f08354a88c61fc8a541e6216c6bc36d3f61df1401b6",
+      "score": 48,
+      "features": [
+        "if",
+        "return",
+        "else",
+        "logical"
+      ],
+      "preview": "function registerRef(vnode, isRemoval) {\n  var key = vnode.data.ref;\n  if (!isDef(key)) {\n    return;\n  }\n  var vm = vnode.context;\n  var ref = vnode.componentInstance || vnode.elm;\n  var refs = vm.$refs;\n  if (isRemoval) {\n    if (Array.isArray(refs[key])) {\n      remove(refs[key], ref);\n    } else if (refs[key] === ref) {\n      refs[key] = undefined;\n    }\n  } else {\n    if (vnode.data.refInFor) {\n      if (!Array.isArray(refs[key])) {\n        refs[key] = [ref];\n      } else if (refs[key].indexOf(ref) < 0) {\n        refs[key].push(ref);\n      }\n    } else {\n      refs[key] = ref;\n    }\n  }\n}"
+    },
+    {
+      "id": "vue-window-2",
+      "rank": 2,
+      "artifact": "vue",
+      "start": 153880,
+      "end": 154577,
+      "sourceWindowBytes": 697,
+      "sourceSha256": "426081b060e89b2c38aafed17a6bac23dbef44e724508e7b4ffd8327b6fecb4f",
+      "score": 46,
+      "features": [
+        "if",
+        "return",
+        "else",
+        "logical"
+      ],
+      "preview": "function isUnknownElement(tag) {\n  if (!inBrowser) {\n    return true;\n  }\n  if (isReservedTag(tag)) {\n    return false;\n  }\n  tag = tag.toLowerCase();\n  if (unknownElementCache[tag] != null) {\n    return unknownElementCache[tag];\n  }\n  var el = document.createElement(tag);\n  if (tag.indexOf('-') > -1) {\n    return unknownElementCache[tag] = el.constructor === window.HTMLUnknownElement || el.constructor === window.HTMLElement;\n  } else {\n    return unknownElementCache[tag] = /HTMLUnknownElement/.test(el.toString());\n  }\n}"
+    },
+    {
+      "id": "vue-window-3",
+      "rank": 3,
+      "artifact": "vue",
+      "start": 284822,
+      "end": 285279,
+      "sourceWindowBytes": 457,
+      "sourceSha256": "0264dbab97f5478dad0f08265fda211fae0dfc51f481bdfc01d3be5788c7fdb7",
+      "score": 41,
+      "features": [
+        "if",
+        "conditional",
+        "else",
+        "logical"
+      ],
+      "preview": "function processIfConditions(el, parent) {\n  var prev = findPrevElement(parent.children);\n  if (prev && prev.if) {\n    addIfCondition(prev, {\n      exp: el.elseif,\n      block: el\n    });\n  } else {\n    warn$2(\"v-\" + (el.elseif ? 'else-if=\"' + el.elseif + '\"' : 'else') + \" \" + \"used on element <\" + el.tag + \"> without corresponding v-if.\", el.rawAttrsMap[el.elseif ? 'v-else-if' : 'v-else']);\n  }\n}"
+    },
+    {
+      "id": "vue-window-4",
+      "rank": 4,
+      "artifact": "vue",
+      "start": 313496,
+      "end": 314189,
+      "sourceWindowBytes": 693,
+      "sourceSha256": "b3dc2e2f9fb3d85cb6f6660c30a96b6df2cf51aa3f99f2d9fbd43a2d19195a91",
+      "score": 41,
+      "features": [
+        "if",
+        "return",
+        "else",
+        "logical"
+      ],
+      "preview": "function genOnce(el, state) {\n  el.onceProcessed = true;\n  if (el.if && !el.ifProcessed) {\n    return genIf(el, state);\n  } else if (el.staticInFor) {\n    var key = '';\n    var parent = el.parent;\n    while (parent) {\n      if (parent.for) {\n        key = parent.key;\n        break;\n      }\n      parent = parent.parent;\n    }\n    if (!key) {\n      state.warn(\"v-once can only be used inside v-for that is keyed. \", el.rawAttrsMap['v-once']);\n      return genElement(el, state);\n    }\n    return \"_o(\" + genElement(el, state) + \",\" + state.onceId++ + \",\" + key + \")\";\n  } else {\n    return genStatic(el, state);\n  }\n}"
+    },
+    {
+      "id": "vue-window-5",
+      "rank": 5,
+      "artifact": "vue",
+      "start": 284425,
+      "end": 284818,
+      "sourceWindowBytes": 393,
+      "sourceSha256": "a50860b327c0c7dcc853c7023f37f2e99e12446f8fa3aa480152ffcaed254c64",
+      "score": 40,
+      "features": [
+        "if",
+        "else"
+      ],
+      "preview": "function processIf(el) {\n  var exp = getAndRemoveAttr(el, 'v-if');\n  if (exp) {\n    el.if = exp;\n    addIfCondition(el, {\n      exp: exp,\n      block: el\n    });\n  } else {\n    if (getAndRemoveAttr(el, 'v-else') != null) {\n      el.else = true;\n    }\n    var elseif = getAndRemoveAttr(el, 'v-else-if');\n    if (elseif) {\n      el.elseif = elseif;\n    }\n  }\n}"
+    }
+  ]
+}

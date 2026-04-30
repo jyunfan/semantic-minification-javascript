@@ -1,0 +1,209 @@
+{
+  "generatedAt": "2026-04-30T18:11:13.451Z",
+  "benchmarkDir": "benchmarks/round2",
+  "windowsPerArtifact": 1,
+  "selectionPolicy": {
+    "nodeType": "Function",
+    "minChars": 120,
+    "maxChars": 700,
+    "requiredSyntax": [
+      "if",
+      "conditional expression"
+    ],
+    "rejectedSyntax": [
+      "eval",
+      "with",
+      "Function constructor",
+      "super",
+      "yield",
+      "await"
+    ],
+    "ordering": [
+      "score desc",
+      "sourceWindowBytes asc",
+      "start asc"
+    ]
+  },
+  "windows": [
+    {
+      "id": "antd-window-1",
+      "rank": 1,
+      "artifact": "antd",
+      "start": 1252132,
+      "end": 1252720,
+      "sourceWindowBytes": 588,
+      "sourceSha256": "f5fca5a0257e0f0438f04bc972fec068c6e372859366c9060390f9d1518455b8",
+      "score": 53,
+      "features": [
+        "if",
+        "return",
+        "conditional"
+      ],
+      "preview": "function getPositionCls(ele, idx) {\n  if (mode === 'alternate') {\n    if (ele.props.position === 'right') return \"\".concat(prefixCls, \"-item-right\");\n    if (ele.props.position === 'left') return \"\".concat(prefixCls, \"-item-left\");\n    return idx % 2 === 0 ? \"\".concat(prefixCls, \"-item-left\") : \"\".concat(prefixCls, \"-item-right\");\n  }\n  if (mode === 'left') return \"\".concat(prefixCls, \"-item-left\");\n  if (mode === 'right') return \"\".concat(prefixCls, \"-item-right\");\n  if (ele.props.position === 'right') return \"\".concat(prefixCls, \"-item-right\");\n  return '';\n}"
+    },
+    {
+      "id": "d3-window-1",
+      "rank": 1,
+      "artifact": "d3",
+      "start": 215033,
+      "end": 215673,
+      "sourceWindowBytes": 640,
+      "sourceSha256": "a3f22037dc5a1cf3f1b5ffe28705d4f5babfff8291849fb163c7d8180f1b7638",
+      "score": 68,
+      "features": [
+        "if",
+        "return",
+        "conditional",
+        "else",
+        "logical"
+      ],
+      "preview": "function autoType(object) {\n  for (var key in object) {\n    var value = object[key].trim(),\n      number,\n      m;\n    if (!value) value = null;else if (value === \"true\") value = true;else if (value === \"false\") value = false;else if (value === \"NaN\") value = NaN;else if (!isNaN(number = +value)) value = number;else if (m = value.match(/^([-+]\\d{2})?\\d{4}(-\\d{2}(-\\d{2})?)?(T\\d{2}:\\d{2}(:\\d{2}(\\.\\d{3})?)?(Z|[-+]\\d{2}:\\d{2})?)?$/)) {\n      if (fixtz && !!m[4] && !m[7]) value = value.replace(/-/g, \"/\").replace(/T/, \" \");\n      value = new Date(value);\n    } else continue;\n    object[key] = value;\n  }\n  return object;\n}"
+    },
+    {
+      "id": "echarts-window-1",
+      "rank": 1,
+      "artifact": "echarts",
+      "start": 84963,
+      "end": 85352,
+      "sourceWindowBytes": 389,
+      "sourceSha256": "4e51887265dd89ea3dce67aeb3b6204b1f8d03f01227ee44eae621615bcad8ec",
+      "score": 39,
+      "features": [
+        "if",
+        "return",
+        "else"
+      ],
+      "preview": "function cssHueToRgb(m1, m2, h) {\n  if (h < 0) {\n    h += 1;\n  } else if (h > 1) {\n    h -= 1;\n  }\n  if (h * 6 < 1) {\n    return m1 + (m2 - m1) * h * 6;\n  }\n  if (h * 2 < 1) {\n    return m2;\n  }\n  if (h * 3 < 2) {\n    return m1 + (m2 - m1) * (2 / 3 - h) * 6;\n  }\n  return m1;\n}"
+    },
+    {
+      "id": "jquery-window-1",
+      "rank": 1,
+      "artifact": "jquery",
+      "start": 118493,
+      "end": 118846,
+      "sourceWindowBytes": 353,
+      "sourceSha256": "3ec56557226a4f8b7d4a1d8585ba7f4c7711d7980ac82c9a6a66dc71103c3c9a",
+      "score": 48,
+      "features": [
+        "if",
+        "return"
+      ],
+      "preview": "function getData(data) {\n  if (data === \"true\") {\n    return true;\n  }\n  if (data === \"false\") {\n    return false;\n  }\n  if (data === \"null\") {\n    return null;\n  }\n  if (data === +data + \"\") {\n    return +data;\n  }\n  if (rbrace.test(data)) {\n    return JSON.parse(data);\n  }\n  return data;\n}"
+    },
+    {
+      "id": "lodash-window-1",
+      "rank": 1,
+      "artifact": "lodash",
+      "start": 375161,
+      "end": 375819,
+      "sourceWindowBytes": 658,
+      "sourceSha256": "b5d3a5ebe267b40e012b26919ef09b059f3dfa8569a6ea70848752dba761745b",
+      "score": 49,
+      "features": [
+        "if",
+        "return",
+        "logical"
+      ],
+      "preview": "function isEmpty(value) {\n  if (value == null) {\n    return true;\n  }\n  if (isArrayLike(value) && (isArray(value) || typeof value == 'string' || typeof value.splice == 'function' || isBuffer(value) || isTypedArray(value) || isArguments(value))) {\n    return !value.length;\n  }\n  var tag = getTag(value);\n  if (tag == mapTag || tag == setTag) {\n    return !value.size;\n  }\n  if (isPrototype(value)) {\n    return !baseKeys(value).length;\n  }\n  for (var key in value) {\n    if (hasOwnProperty.call(value, key)) {\n      return false;\n    }\n  }\n  return true;\n}"
+    },
+    {
+      "id": "moment-window-1",
+      "rank": 1,
+      "artifact": "moment",
+      "start": 68446,
+      "end": 68917,
+      "sourceWindowBytes": 471,
+      "sourceSha256": "b01508b32d2d2ad02a714ba590a5a9a6cf30112321a79e7351065acc75f3ab15",
+      "score": 34,
+      "features": [
+        "if",
+        "return",
+        "else",
+        "logical"
+      ],
+      "preview": "function getLocale(key) {\n  var locale;\n  if (key && key._locale && key._locale._abbr) {\n    key = key._locale._abbr;\n  }\n  if (!key) {\n    return globalLocale;\n  }\n  if (!isArray(key)) {\n    locale = loadLocale(key);\n    if (locale) {\n      return locale;\n    }\n    key = [key];\n  }\n  return chooseLocale(key);\n}"
+    },
+    {
+      "id": "react-window-1",
+      "rank": 1,
+      "artifact": "react",
+      "start": 2698,
+      "end": 3046,
+      "sourceWindowBytes": 348,
+      "sourceSha256": "446c2e6c31ffb8e9c34156a6e9b89cb49859d68b07ecdf3bb2d223452926dd4a",
+      "score": 23,
+      "features": [
+        "if",
+        "return",
+        "logical"
+      ],
+      "preview": "function getIteratorFn(maybeIterable) {\n  if (maybeIterable === null || typeof maybeIterable !== 'object') {\n    return null;\n  }\n  var maybeIterator = MAYBE_ITERATOR_SYMBOL && maybeIterable[MAYBE_ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL];\n  if (typeof maybeIterator === 'function') {\n    return maybeIterator;\n  }\n  return null;\n}"
+    },
+    {
+      "id": "terser-window-1",
+      "rank": 1,
+      "artifact": "terser",
+      "start": 29559,
+      "end": 30177,
+      "sourceWindowBytes": 618,
+      "sourceSha256": "ff30823e1a5cf39d684c0c46d89b6c7c02787ab1a5386582fe5f7b31218c74a9",
+      "score": 68,
+      "features": [
+        "if",
+        "return",
+        "else",
+        "logical"
+      ],
+      "preview": "function parse_js_number(num, allow_e = true) {\n  if (!allow_e && num.includes(\"e\")) {\n    return NaN;\n  }\n  if (RE_HEX_NUMBER.test(num)) {\n    return parseInt(num.substr(2), 16);\n  } else if (RE_OCT_NUMBER.test(num)) {\n    return parseInt(num.substr(1), 8);\n  } else if (RE_ES6_OCT_NUMBER.test(num)) {\n    return parseInt(num.substr(2), 8);\n  } else if (RE_BIN_NUMBER.test(num)) {\n    return parseInt(num.substr(2), 2);\n  } else if (RE_DEC_NUMBER.test(num)) {\n    return parseFloat(num);\n  } else {\n    var val = parseFloat(num);\n    if (val == num) return val;\n  }\n}"
+    },
+    {
+      "id": "three-window-1",
+      "rank": 1,
+      "artifact": "three",
+      "start": 492680,
+      "end": 493139,
+      "sourceWindowBytes": 459,
+      "sourceSha256": "dfb20c0035d01f56afa398444861fc58e9312b059aa3677dd20afa3bcc35fe35",
+      "score": 53,
+      "features": [
+        "if",
+        "return",
+        "else"
+      ],
+      "preview": "function painterSortStable(a, b) {\n  if (a.groupOrder !== b.groupOrder) {\n    return a.groupOrder - b.groupOrder;\n  } else if (a.renderOrder !== b.renderOrder) {\n    return a.renderOrder - b.renderOrder;\n  } else if (a.program !== b.program) {\n    return a.program.id - b.program.id;\n  } else if (a.material.id !== b.material.id) {\n    return a.material.id - b.material.id;\n  } else if (a.z !== b.z) {\n    return a.z - b.z;\n  } else {\n    return a.id - b.id;\n  }\n}"
+    },
+    {
+      "id": "victory-window-1",
+      "rank": 1,
+      "artifact": "victory",
+      "start": 1704068,
+      "end": 1704768,
+      "sourceWindowBytes": 700,
+      "sourceSha256": "87543739cfc28c596c3acfb1b18ab165cca8585c2be28e5e472bced3be603029",
+      "score": 60,
+      "features": [
+        "if",
+        "return",
+        "else"
+      ],
+      "preview": "function (values, valueof) {\n  let min;\n  let max;\n  if (valueof === undefined) {\n    for (const value of values) {\n      if (value != null) {\n        if (min === undefined) {\n          if (value >= value) min = max = value;\n        } else {\n          if (min > value) min = value;\n          if (max < value) max = value;\n        }\n      }\n    }\n  } else {\n    let index = -1;\n    for (let value of values) {\n      if ((value = valueof(value, ++index, values)) != null) {\n        if (min === undefined) {\n          if (value >= value) min = max = value;\n        } else {\n          if (min > value) min = value;\n          if (max < value) max = value;\n        }\n      }\n    }\n  }\n  return [min, max];\n}"
+    },
+    {
+      "id": "vue-window-1",
+      "rank": 1,
+      "artifact": "vue",
+      "start": 157134,
+      "end": 157807,
+      "sourceWindowBytes": 673,
+      "sourceSha256": "9cf1d19809b39ac343143f08354a88c61fc8a541e6216c6bc36d3f61df1401b6",
+      "score": 48,
+      "features": [
+        "if",
+        "return",
+        "else",
+        "logical"
+      ],
+      "preview": "function registerRef(vnode, isRemoval) {\n  var key = vnode.data.ref;\n  if (!isDef(key)) {\n    return;\n  }\n  var vm = vnode.context;\n  var ref = vnode.componentInstance || vnode.elm;\n  var refs = vm.$refs;\n  if (isRemoval) {\n    if (Array.isArray(refs[key])) {\n      remove(refs[key], ref);\n    } else if (refs[key] === ref) {\n      refs[key] = undefined;\n    }\n  } else {\n    if (vnode.data.refInFor) {\n      if (!Array.isArray(refs[key])) {\n        refs[key] = [ref];\n      } else if (refs[key].indexOf(ref) < 0) {\n        refs[key].push(ref);\n      }\n    } else {\n      refs[key] = ref;\n    }\n  }\n}"
+    }
+  ]
+}

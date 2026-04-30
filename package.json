@@ -9,7 +9,12 @@
     "fetch:round2": "node scripts/fetch-round2-artifacts.js",
     "experiment:round2": "node scripts/run-round2-experiment.js",
     "experiment:round3": "node scripts/run-round3-experiment.js",
-    "experiment:round4": "node scripts/run-round4-experiment.js"
+    "experiment:round4": "node scripts/run-round4-experiment.js",
+    "select:round5": "node scripts/select-round5-windows.js",
+    "experiment:round5": "node scripts/run-round5-experiment.js",
+    "select:round6": "node scripts/select-round6-windows.js",
+    "seed:round6": "node scripts/seed-round6-candidates.js",
+    "experiment:round6": "node scripts/run-round6-experiment.js"
   },
   "dependencies": {
     "@babel/generator": "^7.26.3",

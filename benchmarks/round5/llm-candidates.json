@@ -1,0 +1,108 @@
+{
+  "description": "Cached LLM-generated replacement candidates for the deterministic Round 5 full-corpus windows.",
+  "generationMode": "manual-cache-from-codex-session",
+  "model": "codex-session",
+  "generatedAt": "2026-05-01T00:00:00.000+08:00",
+  "windowsPath": "benchmarks/round5/windows.json",
+  "candidates": [
+    {
+      "windowId": "antd-window-1",
+      "responses": [
+        {
+          "name": "position-ternary",
+          "code": "function getPositionCls(ele, idx) {\n  var pos = ele.props.position;\n  if (mode === 'alternate') return pos === 'right' ? prefixCls + \"-item-right\" : pos === 'left' || idx % 2 === 0 ? prefixCls + \"-item-left\" : prefixCls + \"-item-right\";\n  return mode === 'left' ? prefixCls + \"-item-left\" : mode === 'right' || pos === 'right' ? prefixCls + \"-item-right\" : '';\n}"
+        }
+      ]
+    },
+    {
+      "windowId": "d3-window-1",
+      "responses": [
+        {
+          "name": "trim-assignment",
+          "code": "function autoType(object) {\n  for (var key in object) {\n    var value = object[key].trim(), number, m;\n    if (!value) value = null;\n    else if (value === \"true\") value = true;\n    else if (value === \"false\") value = false;\n    else if (value === \"NaN\") value = NaN;\n    else if (!isNaN(number = +value)) value = number;\n    else if (m = value.match(/^([-+]\\d{2})?\\d{4}(-\\d{2}(-\\d{2})?)?(T\\d{2}:\\d{2}(:\\d{2}(\\.\\d{3})?)?(Z|[-+]\\d{2}:\\d{2})?)?$/)) {\n      if (fixtz && !!m[4] && !m[7]) value = value.replace(/-/g, \"/\").replace(/T/, \" \");\n      value = new Date(value);\n    } else continue;\n    object[key] = value;\n  }\n  return object;\n}"
+        }
+      ]
+    },
+    {
+      "windowId": "echarts-window-1",
+      "responses": [
+        {
+          "name": "hue-ternary",
+          "code": "function cssHueToRgb(m1, m2, h) {\n  h < 0 ? h += 1 : h > 1 && (h -= 1);\n  return h * 6 < 1 ? m1 + (m2 - m1) * h * 6 : h * 2 < 1 ? m2 : h * 3 < 2 ? m1 + (m2 - m1) * (2 / 3 - h) * 6 : m1;\n}"
+        }
+      ]
+    },
+    {
+      "windowId": "jquery-window-1",
+      "responses": [
+        {
+          "name": "data-ternary",
+          "code": "function getData(data) {\n  return data === \"true\" ? true : data === \"false\" ? false : data === \"null\" ? null : data === +data + \"\" ? +data : rbrace.test(data) ? JSON.parse(data) : data;\n}"
+        }
+      ]
+    },
+    {
+      "windowId": "lodash-window-1",
+      "responses": [
+        {
+          "name": "early-return-flat",
+          "code": "function isEmpty(value) {\n  if (value == null) return true;\n  if (isArrayLike(value) && (isArray(value) || typeof value == 'string' || typeof value.splice == 'function' || isBuffer(value) || isTypedArray(value) || isArguments(value))) return !value.length;\n  var tag = getTag(value);\n  if (tag == mapTag || tag == setTag) return !value.size;\n  if (isPrototype(value)) return !baseKeys(value).length;\n  for (var key in value) if (hasOwnProperty.call(value, key)) return false;\n  return true;\n}"
+        }
+      ]
+    },
+    {
+      "windowId": "moment-window-1",
+      "responses": [
+        {
+          "name": "array-fast-path",
+          "code": "function getLocale(key) {\n  var locale;\n  if (key && key._locale && key._locale._abbr) key = key._locale._abbr;\n  if (!key) return globalLocale;\n  if (isArray(key)) return chooseLocale(key);\n  return (locale = loadLocale(key)) ? locale : chooseLocale([key]);\n}"
+        }
+      ]
+    },
+    {
+      "windowId": "react-window-1",
+      "responses": [
+        {
+          "name": "single-return",
+          "code": "function getIteratorFn(maybeIterable) {\n  var maybeIterator;\n  return maybeIterable === null || typeof maybeIterable !== 'object' ? null : typeof (maybeIterator = MAYBE_ITERATOR_SYMBOL && maybeIterable[MAYBE_ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL]) === 'function' ? maybeIterator : null;\n}"
+        }
+      ]
+    },
+    {
+      "windowId": "terser-window-1",
+      "responses": [
+        {
+          "name": "early-return-flat",
+          "code": "function parse_js_number(num, allow_e = true) {\n  if (!allow_e && num.includes(\"e\")) return NaN;\n  if (RE_HEX_NUMBER.test(num)) return parseInt(num.substr(2), 16);\n  if (RE_OCT_NUMBER.test(num)) return parseInt(num.substr(1), 8);\n  if (RE_ES6_OCT_NUMBER.test(num)) return parseInt(num.substr(2), 8);\n  if (RE_BIN_NUMBER.test(num)) return parseInt(num.substr(2), 2);\n  if (RE_DEC_NUMBER.test(num)) return parseFloat(num);\n  var val = parseFloat(num);\n  if (val == num) return val;\n}"
+        }
+      ]
+    },
+    {
+      "windowId": "three-window-1",
+      "responses": [
+        {
+          "name": "drop-else-chain",
+          "code": "function painterSortStable(a, b) {\n  if (a.groupOrder !== b.groupOrder) return a.groupOrder - b.groupOrder;\n  if (a.renderOrder !== b.renderOrder) return a.renderOrder - b.renderOrder;\n  if (a.program !== b.program) return a.program.id - b.program.id;\n  if (a.material.id !== b.material.id) return a.material.id - b.material.id;\n  if (a.z !== b.z) return a.z - b.z;\n  return a.id - b.id;\n}"
+        }
+      ]
+    },
+    {
+      "windowId": "victory-window-1",
+      "responses": [
+        {
+          "name": "merge-valueof-loops",
+          "code": "function (values, valueof) {\n  let min, max, index = -1;\n  for (let value of values) {\n    if (valueof !== undefined) value = valueof(value, ++index, values);\n    if (value != null) {\n      if (min === undefined) {\n        if (value >= value) min = max = value;\n      } else {\n        if (min > value) min = value;\n        if (max < value) max = value;\n      }\n    }\n  }\n  return [min, max];\n}"
+        }
+      ]
+    },
+    {
+      "windowId": "vue-window-1",
+      "responses": [
+        {
+          "name": "flatten-ref-branches",
+          "code": "function registerRef(vnode, isRemoval) {\n  var key = vnode.data.ref;\n  if (!isDef(key)) return;\n  var vm = vnode.context, ref = vnode.componentInstance || vnode.elm, refs = vm.$refs;\n  if (isRemoval) Array.isArray(refs[key]) ? remove(refs[key], ref) : refs[key] === ref && (refs[key] = undefined);\n  else if (vnode.data.refInFor) Array.isArray(refs[key]) ? refs[key].indexOf(ref) < 0 && refs[key].push(ref) : refs[key] = [ref];\n  else refs[key] = ref;\n}"
+        }
+      ]
+    }
+  ]
+}
