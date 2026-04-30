@@ -1,0 +1,92 @@
+{
+  "description": "Cached LLM-generated replacement candidates for Round 4. Each candidate replaces one real-project source window and is judged only after parse, Terser, and size checks.",
+  "generationMode": "manual-cache-from-codex-session",
+  "model": "codex-session",
+  "generatedAt": "2026-05-01T00:00:00.000+08:00",
+  "candidates": [
+    {
+      "id": "react-getIteratorFn-single-return",
+      "artifact": "react",
+      "start": 2698,
+      "end": 3046,
+      "sourceSha256": "446c2e6c31ffb8e9c34156a6e9b89cb49859d68b07ecdf3bb2d223452926dd4a",
+      "promptSummary": "Rewrite this complete function into a shorter equivalent function. Preserve observable behavior and do not assume purity.",
+      "responses": [
+        {
+          "name": "single-return",
+          "code": "function getIteratorFn(maybeIterable) {\n  var maybeIterator;\n  return maybeIterable === null || typeof maybeIterable !== 'object' ? null : typeof (maybeIterator = MAYBE_ITERATOR_SYMBOL && maybeIterable[MAYBE_ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL]) === 'function' ? maybeIterator : null;\n}"
+        }
+      ]
+    },
+    {
+      "id": "react-stack-conditional-concat",
+      "artifact": "react",
+      "start": 4067,
+      "end": 4435,
+      "sourceSha256": "328328dd0cb4ec1f0a4dcafdc7183cafe0a17ad1b04d9a458c658741d4ede8e3",
+      "promptSummary": "Rewrite this anonymous function into a shorter equivalent function while preserving call order.",
+      "responses": [
+        {
+          "name": "conditional-concat",
+          "code": "function () {\n  var impl = ReactDebugCurrentFrame.getCurrentStack;\n  return (currentExtraStackFrame || '') + (impl ? impl() || '' : '');\n}"
+        }
+      ]
+    },
+    {
+      "id": "moment-isObjectEmpty-early-fallback",
+      "artifact": "moment",
+      "start": 1233,
+      "end": 1583,
+      "sourceSha256": "3e6f853a27c1c2b0a91bb753db71dac373d5d42aa70640347f6eee148afc17ea",
+      "promptSummary": "Rewrite this function into a shorter equivalent function. Keep fallback enumeration behavior.",
+      "responses": [
+        {
+          "name": "early-fallback",
+          "code": "function isObjectEmpty(obj) {\n  if (Object.getOwnPropertyNames) return Object.getOwnPropertyNames(obj).length === 0;\n  for (var k in obj) if (hasOwnProp(obj, k)) return false;\n  return true;\n}"
+        }
+      ]
+    },
+    {
+      "id": "vue-makeMap-shared-return",
+      "artifact": "vue",
+      "start": 2687,
+      "end": 3018,
+      "sourceSha256": "a3e016aba339643b48bc586df29b62a873536fc58f1038b42ba389cb4d0b254b",
+      "promptSummary": "Rewrite this function into a shorter equivalent function. Preserve closure behavior.",
+      "responses": [
+        {
+          "name": "shared-return",
+          "code": "function makeMap(str, expectsLowerCase) {\n  var map = Object.create(null);\n  var list = str.split(',');\n  for (var i = 0; i < list.length; i++) map[list[i]] = true;\n  return function (val) {\n    return map[expectsLowerCase ? val.toLowerCase() : val];\n  };\n}"
+        }
+      ]
+    },
+    {
+      "id": "vue-remove-flat",
+      "artifact": "vue",
+      "start": 3307,
+      "end": 3473,
+      "sourceSha256": "102cf718513f561bb2f37ab7fc2a8a93f26ee3f16d4ef98f819daf0812e6f9fa",
+      "promptSummary": "Rewrite this function into a shorter equivalent function without changing return value.",
+      "responses": [
+        {
+          "name": "flat-index-test",
+          "code": "function remove(arr, item) {\n  var index;\n  if (arr.length && (index = arr.indexOf(item)) > -1) return arr.splice(index, 1);\n}"
+        }
+      ]
+    },
+    {
+      "id": "vue-looseIndexOf-one-line",
+      "artifact": "vue",
+      "start": 8052,
+      "end": 8201,
+      "sourceSha256": "96cbbb1a2eac627061beef8dbdb4d7e582516d555971f76aa0a847b44643d90a",
+      "promptSummary": "Rewrite this function into a shorter equivalent function.",
+      "responses": [
+        {
+          "name": "one-line-loop",
+          "code": "function looseIndexOf(arr, val) {\n  for (var i = 0; i < arr.length; i++) if (looseEqual(arr[i], val)) return i;\n  return -1;\n}"
+        }
+      ]
+    }
+  ]
+}

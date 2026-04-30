@@ -1,0 +1,41 @@
+[
+  {
+    "benchmark": "assignment-choice",
+    "originalBytes": 325,
+    "originalBrotliBytes": 156,
+    "terserBytes": 147,
+    "terserBrotliBytes": 99,
+    "bestSemanticRule": "boolean-comparison",
+    "bestSemanticBytes": 137,
+    "bestSemanticBrotliBytes": 89,
+    "candidates": 3,
+    "verifiedCandidates": 3,
+    "latencyMs": 28.22
+  },
+  {
+    "benchmark": "boolean-normalize",
+    "originalBytes": 338,
+    "originalBrotliBytes": 151,
+    "terserBytes": 196,
+    "terserBrotliBytes": 116,
+    "bestSemanticRule": "boolean-comparison",
+    "bestSemanticBytes": 183,
+    "bestSemanticBrotliBytes": 111,
+    "candidates": 3,
+    "verifiedCandidates": 3,
+    "latencyMs": 13.13
+  },
+  {
+    "benchmark": "score-label",
+    "originalBytes": 209,
+    "originalBrotliBytes": 125,
+    "terserBytes": 133,
+    "terserBrotliBytes": 93,
+    "bestSemanticRule": "terser",
+    "bestSemanticBytes": 133,
+    "bestSemanticBrotliBytes": 93,
+    "candidates": 3,
+    "verifiedCandidates": 3,
+    "latencyMs": 6.87
+  }
+]

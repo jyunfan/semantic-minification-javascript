@@ -1,0 +1,10 @@
+{
+  "price": [
+    [[true, 100], 80],
+    [[false, 100], 100]
+  ],
+  "gate": [
+    [[false], "closed"],
+    [[true], "open"]
+  ]
+}

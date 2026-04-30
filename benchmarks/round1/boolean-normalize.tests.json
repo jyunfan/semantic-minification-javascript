@@ -1,0 +1,12 @@
+{
+  "isEligible": [
+    [[{"active": true, "banned": false}, 20], true],
+    [[{"active": true, "banned": true}, 20], false],
+    [[{"active": false, "banned": false}, 20], false],
+    [[{"active": true, "banned": false}, 8], false]
+  ],
+  "status": [
+    [[{"active": true}], "active"],
+    [[{"active": false}], "inactive"]
+  ]
+}
