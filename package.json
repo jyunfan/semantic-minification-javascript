@@ -14,7 +14,9 @@
     "experiment:round5": "node scripts/run-round5-experiment.js",
     "select:round6": "node scripts/select-round6-windows.js",
     "seed:round6": "node scripts/seed-round6-candidates.js",
-    "experiment:round6": "node scripts/run-round6-experiment.js"
+    "experiment:round6": "node scripts/run-round6-experiment.js",
+    "seed:round7": "node scripts/seed-round7-candidates.js",
+    "experiment:round7": "node scripts/run-round7-experiment.js"
   },
   "dependencies": {
     "@babel/generator": "^7.26.3",
